@@ -1,0 +1,6 @@
+<root>
+	<content uuid="b6309253-705e-44d1-b3b2-e23821b1ea87" file="outgoing/payload/gamunex2/index.html" title="Gamunex" view="/Gamunex/" icon="outgoing/payload/gamunex2/gamunex-icon.png"/>
+    <options>
+        <option id="config" value="true" />
+    </options>
+</root>

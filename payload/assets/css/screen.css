@@ -1,0 +1,5284 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'helveticaneuelt_stdbold';
+  src: url("../fonts/helveticaneueltstd-bd-webfont.svg#helveticaneuelt_stdbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url("../fonts/avenirltstd-book.eot");
+  src: url("../fonts/avenirltstd-book.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirltstd-book.svg#avenirltstd-book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: url("../fonts/avenirltstd-medium.eot");
+  src: url("../fonts/avenirltstd-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirltstd-medium.svg#avenirltstd-medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINCondensMed';
+  src: url("../fonts/DINWebPro-CondMedium.eot");
+  src: url("../fonts/DINWebPro-CondMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWebPro-CondMedium.woff") format("woff"), url("../fonts/DINCompPro-CondMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINCondensReg';
+  src: url("../fonts/DINWebPro-Cond.eot");
+  src: url("../fonts/DINWebPro-Cond.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWebPro-Cond.woff") format("woff"), url("../fonts/DINCompPro-Cond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINMed';
+  src: url("../fonts/DINWeb-Medium.eot");
+  src: url("../fonts/DINWeb-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-Medium.woff") format("woff"), url("../fonts/DINComp-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINBold';
+  src: url("../fonts/DINWeb-Bold.eot");
+  src: url("../fonts/DINWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-Bold.woff") format("woff"), url("../fonts/DINComp-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINReg';
+  src: url("../fonts/DINWeb.eot");
+  src: url("../fonts/DINWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb.woff") format("woff"), url("../fonts/DINComp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRegItal';
+  src: url("../fonts/DINWeb-Ita.eot");
+  src: url("../fonts/DINWeb-Ita.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-Ita.woff") format("woff"), url("../fonts/DINComp-Ita.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINMedItal';
+  src: url("../fonts/DINWeb-MediumIta.eot");
+  src: url("../fonts/DINWeb-MediumIta.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-MediumIta.woff") format("woff"), url("../fonts/DINComp-MediumIta.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINBoldItal';
+  src: url("../fonts/DINWeb-BoldIta.eot");
+  src: url("../fonts/DINWeb-BoldIta.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-BoldIta.woff") format("woff"), url("../fonts/DINComp-BoldIta.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 116, ../../../../gamunex_SASS/sass/screen.scss */
+body {
+  background: #333;
+  font-family: 'DINReg';
+  color: #4e544c;
+  -webkit-user-select: none;
+  -webkit-appearance: none;
+}
+
+/* line 124, ../../../../gamunex_SASS/sass/screen.scss */
+.float-left {
+  float: left;
+}
+
+/* line 127, ../../../../gamunex_SASS/sass/screen.scss */
+.dinBold {
+  font-family: 'DINBold';
+}
+
+/* line 131, ../../../../gamunex_SASS/sass/screen.scss */
+.nudge-button-left {
+  margin: 0 0 0 -25px;
+}
+
+/* line 135, ../../../../gamunex_SASS/sass/screen.scss */
+.em-bullet {
+  margin: 2px 0 0 8px;
+}
+
+/* line 139, ../../../../gamunex_SASS/sass/screen.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 142, ../../../../gamunex_SASS/sass/screen.scss */
+.noBreak {
+  white-space: nowrap;
+}
+
+/* line 145, ../../../../gamunex_SASS/sass/screen.scss */
+.gray-text {
+  color: #58595b;
+}
+
+/* line 148, ../../../../gamunex_SASS/sass/screen.scss */
+h1 span.unbold {
+  font-family: "DINReg";
+  font-size: 18px !important;
+  color: #00abaa !important;
+  position: relative;
+  top: -5px;
+}
+
+/* line 156, ../../../../gamunex_SASS/sass/screen.scss */
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #00abaa;
+  font-size: 18pt;
+  line-height: 1.0em;
+  width: 80%;
+  margin: -7px 0 20px 145px;
+  font-family: 'DINBold';
+}
+
+/* line 166, ../../../../gamunex_SASS/sass/screen.scss */
+h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14pt;
+  line-height: 20px;
+  margin: 5px 0 20px 0;
+  color: #666666;
+  font-family: 'DINBold';
+}
+
+/* line 175, ../../../../gamunex_SASS/sass/screen.scss */
+h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #00abaa;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 15px;
+  margin: 0 0 5px 0;
+}
+
+/* line 184, ../../../../gamunex_SASS/sass/screen.scss */
+h4 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #666666;
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 12pt;
+  margin: 0 0 0 0;
+}
+
+/* line 193, ../../../../gamunex_SASS/sass/screen.scss */
+p {
+  margin: 5px 0;
+  padding: 0 0 0 0;
+  color: #666666;
+}
+
+/* line 198, ../../../../gamunex_SASS/sass/screen.scss */
+.callout {
+  background: url(../images/global_callout_green.png) no-repeat;
+  background-position: 0px 0px;
+  background-size: 608px 80px;
+  margin: 0;
+  padding: 15px 0 20px 25px;
+  height: 85px;
+}
+
+/* line 207, ../../../../gamunex_SASS/sass/screen.scss */
+.l-twoSixty {
+  margin: 0 0 0 260px;
+}
+
+/* line 211, ../../../../gamunex_SASS/sass/screen.scss */
+.callout p {
+  font-size: 11pt;
+  margin: 10px 0;
+  padding: 0 0 0 0px;
+  color: #666666;
+}
+
+/* line 218, ../../../../gamunex_SASS/sass/screen.scss */
+sup {
+  font-size: 60%;
+  line-height: 1.0em;
+  font-family: 'DINReg';
+  vertical-align: text-top;
+}
+
+/* line 225, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_1_DISABILITY_slideActive sup {
+  font-size: 60%;
+  line-height: 0.9em;
+  font-family: 'DINReg';
+  vertical-align: text-top;
+}
+
+/* line 232, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_1_DISABILITY_slideActive .subhead {
+  margin-left: 145px;
+}
+
+/* line 236, ../../../../gamunex_SASS/sass/screen.scss */
+#container {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* line 245, ../../../../gamunex_SASS/sass/screen.scss */
+ul li ul {
+  list-style-type: none !important;
+  margin-left: 0;
+  padding-left: 0.45em;
+  text-indent: -0.45em;
+}
+
+/* line 251, ../../../../gamunex_SASS/sass/screen.scss */
+.overlay {
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 65%, rgba(255, 255, 255, 0.03) 99%, rgba(255, 255, 255, 0) 100%);
+  display: table;
+}
+
+/* line 263, ../../../../gamunex_SASS/sass/screen.scss */
+.modal {
+  margin: 30px auto;
+}
+
+/* line 267, ../../../../gamunex_SASS/sass/screen.scss */
+.all-caps-med {
+  text-transform: uppercase;
+  font-family: 'DINCondensMed';
+}
+
+/* line 272, ../../../../gamunex_SASS/sass/screen.scss */
+.large-modal {
+  background: url(../images/5.1_PI_popup.png) no-repeat;
+  background-size: 955px 600px;
+  width: 915px;
+  height: 560px;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  z-index: 10;
+  padding: 50px 0 0 30px;
+}
+
+/* line 284, ../../../../gamunex_SASS/sass/screen.scss */
+.large-modal .closeXbutton {
+  right: -25px;
+}
+
+/* line 289, ../../../../gamunex_SASS/sass/screen.scss */
+.diagnostic {
+  position: absolute;
+  font-family: arial;
+  top: 20px;
+  left: 400px;
+  border: 2px solid blue;
+  padding: 10px;
+  z-index: 100;
+  color: #000;
+  font-size: 18px;
+  width: 500px;
+}
+
+/* line 301, ../../../../gamunex_SASS/sass/screen.scss */
+.diagnostic span {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 305, ../../../../gamunex_SASS/sass/screen.scss */
+.home-copyright {
+  position: absolute;
+  width: 500px;
+  left: 60px;
+  top: 700px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* line 313, ../../../../gamunex_SASS/sass/screen.scss */
+.home-copyright p {
+  color: #FFFFFF;
+  padding: 0 0 7px 0;
+}
+
+/* line 317, ../../../../gamunex_SASS/sass/screen.scss */
+.grifols-logo {
+  position: absolute;
+  left: 500px;
+  top: 30px;
+  z-index: 5px;
+}
+
+/* line 323, ../../../../gamunex_SASS/sass/screen.scss */
+#HOME_0_0_slideActive .grifols-logo {
+  position: absolute;
+  left: 910px;
+  top: 20px;
+  z-index: 10;
+}
+
+/* line 330, ../../../../gamunex_SASS/sass/screen.scss */
+.home-callout {
+  background: url(../images/home_callout.png);
+  background-size: 929px 187px;
+  width: 909px;
+  height: 187px;
+  position: absolute;
+  left: 50px;
+  top: 515px;
+  padding: 0px 0 0 25px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 341, ../../../../gamunex_SASS/sass/screen.scss */
+.home-callout ul {
+  margin: 45px 0 15px 0px;
+}
+
+/* line 344, ../../../../gamunex_SASS/sass/screen.scss */
+.home-callout li {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* line 348, ../../../../gamunex_SASS/sass/screen.scss */
+.home-callout p {
+  width: 520px;
+  color: #fff;
+  margin: 20px 0 0 0px;
+  font-size: 22px;
+  font-family: 'DINCondensMed';
+  text-transform: uppercase;
+}
+
+/* line 356, ../../../../gamunex_SASS/sass/screen.scss */
+.home-logo {
+  position: absolute;
+  top: 675px;
+  left: 710px;
+  z-index: 5;
+}
+
+/* line 362, ../../../../gamunex_SASS/sass/screen.scss */
+.home-slogan {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: 5;
+}
+
+/* line 368, ../../../../gamunex_SASS/sass/screen.scss */
+.text-cover-plate {
+  width: 285px;
+  height: 110px;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+  z-index: 6;
+}
+
+/* line 376, ../../../../gamunex_SASS/sass/screen.scss */
+.background-wall {
+  background: url(../images/home_bg.jpg);
+  background-size: 1500px 768px;
+  width: 1500px;
+  height: 768px;
+  position: absolute;
+  left: -200px;
+}
+
+/* line 384, ../../../../gamunex_SASS/sass/screen.scss */
+#menuFirstLevel {
+  position: absolute;
+  top: 220px;
+  left: 40px;
+  width: 1024px;
+  z-index: 1;
+}
+
+/* line 391, ../../../../gamunex_SASS/sass/screen.scss */
+#menuSecondLevel {
+  position: absolute;
+  top: 300px;
+  left: 0px;
+  width: 2520px;
+  z-index: 2;
+  -webkit-transform: scale(2);
+}
+
+/* line 399, ../../../../gamunex_SASS/sass/screen.scss */
+#menuThirdLevel {
+  position: absolute;
+  top: 350px;
+  left: 0px;
+  z-index: 3;
+  -webkit-transform: scale(2);
+}
+
+/* line 406, ../../../../gamunex_SASS/sass/screen.scss */
+#menuThirdLevel .menu-box {
+  display: table;
+}
+
+/* line 409, ../../../../gamunex_SASS/sass/screen.scss */
+#menuThirdLevel .menu-box span {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #58595b;
+  padding-right: 12px;
+}
+
+/* line 420, ../../../../gamunex_SASS/sass/screen.scss */
+#Efficacy {
+  width: 1700px;
+}
+
+/* line 423, ../../../../gamunex_SASS/sass/screen.scss */
+#menuFirstLevel .menu-box p {
+  position: absolute;
+  bottom: 35px;
+  left: 43px;
+  color: #fff;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: 'DINBold';
+}
+
+/* line 432, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box {
+  position: relative;
+  float: left;
+  background: url(../images/home_tile.png);
+  background-size: 296px 229px;
+  width: 296px;
+  height: 229px;
+  margin: 0 10px 0 10px;
+}
+/* line 442, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box img {
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  left: 100px;
+}
+/* line 449, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box img.oneline {
+  bottom: 70px;
+}
+/* line 454, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box img.twoline {
+  bottom: 60px;
+}
+
+/* line 460, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box ul {
+  position: absolute;
+  list-style: square;
+  color: #00a9a7;
+  font-size: 26px;
+  top: 35px;
+  left: 60px;
+}
+
+/* line 468, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box li {
+  line-height: 0.7em;
+}
+
+/* line 471, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box li span {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #58595b;
+}
+
+/* line 476, ../../../../gamunex_SASS/sass/screen.scss */
+#menuSecondLevel .menu-box, #menuThirdLevel .menu-box {
+  margin: 0px 0px 0 0px;
+}
+
+/* line 479, ../../../../gamunex_SASS/sass/screen.scss */
+#menuSecondLevel .menu-box, #menuThirdLevel .menu-box {
+  background: url(../images/home_P1_tile.png);
+  background-size: 280px 227px;
+  width: 280px;
+  height: 227px;
+}
+
+/* line 486, ../../../../gamunex_SASS/sass/screen.scss */
+#Gamunex-Brand {
+  width: 650px;
+}
+
+/* line 493, ../../../../gamunex_SASS/sass/screen.scss */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: url(../images/header.png) no-repeat;
+  background-size: 1024px 117px;
+  width: 1024px;
+  height: 117px;
+}
+
+/* line 503, ../../../../gamunex_SASS/sass/screen.scss */
+.header-CIDP {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: url(../images/header_CIDP.png) no-repeat;
+  background-size: 1024px 117px;
+  width: 1024px;
+  height: 117px;
+}
+
+/* line 513, ../../../../gamunex_SASS/sass/screen.scss */
+.header-shared-7-2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: url(../images/header_shared_7_2.png) no-repeat;
+  background-size: 1024px 169px;
+  width: 1024px;
+  height: 169px;
+}
+
+/* line 523, ../../../../gamunex_SASS/sass/screen.scss */
+.header-PI {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../images/header_PI.png) no-repeat;
+  background-size: 1024px 117px;
+  width: 1024px;
+  height: 117px;
+}
+
+/* line 533, ../../../../gamunex_SASS/sass/screen.scss */
+.header-ITP {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../images/header_ITP.png) no-repeat;
+  background-size: 1024px 117px;
+  width: 1024px;
+  height: 117px;
+}
+
+/* line 543, ../../../../gamunex_SASS/sass/screen.scss */
+.header-all {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../images/header_all.png) no-repeat;
+  background-size: 1024px 117px;
+  width: 1024px;
+  height: 117px;
+}
+
+/* line 553, ../../../../gamunex_SASS/sass/screen.scss */
+.headerIconChart {
+  position: relative;
+  float: left;
+  margin: 10px 0 0 170px;
+  background: url(../images/header_icon_chart.png) no-repeat;
+  background-size: 45px 19px;
+  width: 45px;
+  height: 19px;
+}
+
+/* line 563, ../../../../gamunex_SASS/sass/screen.scss */
+.cidp {
+  position: absolute;
+  top: 16px;
+  left: 220px;
+  color: #ffffff;
+}
+
+/* line 570, ../../../../gamunex_SASS/sass/screen.scss */
+.grifLogo {
+  float: right;
+  margin: 0;
+  padding: 23px 45px 20px 10px;
+  width: 93px;
+  height: 20px;
+}
+
+/* line 578, ../../../../gamunex_SASS/sass/screen.scss */
+.seize {
+  position: absolute;
+  width: 500px;
+  top: 35px;
+  left: 220px;
+  font-size: 26px;
+  color: #ffffff;
+  text-shadow: 0px 3px 2px #969696;
+}
+
+/* line 588, ../../../../gamunex_SASS/sass/screen.scss */
+.page-content {
+  padding: 30px 0px 0px 20px;
+  margin: 75px 0 0 0;
+  height: 538px;
+  width: 1010px;
+  background: -webkit-linear-gradient(top, white 0%, white 92%, #f0f0f0 97%, #d6d6d6 100%);
+}
+
+/* line 596, ../../../../gamunex_SASS/sass/screen.scss */
+.page-content_noGrad {
+  padding: 30px 0px 0px 20px;
+  margin: 75px 0 0 0;
+  height: 538px;
+  width: 1010px;
+}
+
+/* line 603, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain {
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+}
+
+/* line 610, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain ul {
+  list-style-type: square;
+  color: #00abaa;
+  font-size: 30px;
+}
+
+/* line 617, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain li {
+  line-height: 0.5em;
+  margin-bottom: 8px;
+}
+
+/* line 622, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain li span {
+  font-size: 16px;
+}
+
+/* line 625, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain li ul {
+  margin: 5px 0 5px 0;
+}
+
+/* line 629, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #Shared-6-2-chart-bullets1 span {
+  color: #000000;
+}
+
+/* line 633, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #Shared-6-2-chart-bullets2 span {
+  color: #000000;
+}
+
+/* line 638, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #Shared-6-2-chart-bullets3 span {
+  color: #000000;
+}
+
+/* line 642, ../../../../gamunex_SASS/sass/screen.scss */
+.lh-15 {
+  line-height: 15px;
+}
+
+/* line 646, ../../../../gamunex_SASS/sass/screen.scss */
+.small-grey-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* line 651, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain li span {
+  color: #666666;
+}
+
+/* line 655, ../../../../gamunex_SASS/sass/screen.scss */
+.lftList_sixty ul li span {
+  line-height: 10px;
+}
+
+/* line 659, ../../../../gamunex_SASS/sass/screen.scss */
+.svnTwoGraphic {
+  float: right;
+  margin: 0 170px 75px 0;
+}
+
+/* line 664, ../../../../gamunex_SASS/sass/screen.scss */
+.lftList_sixty {
+  width: 60%;
+  float: left;
+}
+
+/* line 669, ../../../../gamunex_SASS/sass/screen.scss */
+.rtList_forty {
+  width: 40%;
+  height: 157px;
+  margin: 0 0 0 40%;
+  background: url(../images/7.2_graphic.png) no-repeat;
+  background-size: 241px 157px;
+}
+
+/* line 677, ../../../../gamunex_SASS/sass/screen.scss */
+.lsNone {
+  list-style: none;
+  margin-left: 16px;
+}
+
+/* line 682, ../../../../gamunex_SASS/sass/screen.scss */
+.ftrGrad {
+  width: 1024;
+  height: 158px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 610px;
+  left: 0px;
+}
+
+/* line 692, ../../../../gamunex_SASS/sass/screen.scss */
+.footer {
+  position: absolute;
+  top: 650px;
+  left: 0px;
+  height: 115px;
+  width: 1020px;
+  margin: 0;
+  padding: 0px;
+  line-height: 1.2em;
+}
+
+/* line 703, ../../../../gamunex_SASS/sass/screen.scss */
+.footerCopy {
+  position: relative;
+  width: 665px;
+  margin: 10px 0 0 20px;
+  padding: 0 0 5px 20px;
+  float: left;
+  font-family: 'DINReg';
+  font-size: 16px;
+}
+
+/* line 712, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_4_1_PRODUCT_PROPERTIES_OVERVIEW_slideActive .footerCopy {
+  width: 700px;
+  color: #666666;
+}
+
+/* line 716, ../../../../gamunex_SASS/sass/screen.scss */
+.footerCopy h3 {
+  font-family: 'DINBold';
+  color: #00abaa;
+}
+
+/* line 723, ../../../../gamunex_SASS/sass/screen.scss */
+.footerCopy p a {
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 729, ../../../../gamunex_SASS/sass/screen.scss */
+.footer img {
+  float: right;
+  margin: 25px 35px 0 0;
+}
+
+/* line 734, ../../../../gamunex_SASS/sass/screen.scss */
+.clear {
+  clear: both;
+  height: 0;
+}
+
+/* SHARED_7_1_PHYSICIAN_SERVICE_slideActive */
+/* line 741, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #three-col_Left {
+  float: left;
+  width: 340px;
+  background: #EBEBEB;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 748, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #three-col_Right {
+  float: right;
+  width: 170px;
+  background: #EBEBEB;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 755, ../../../../gamunex_SASS/sass/screen.scss */
+.ContentMain #three-col_Center {
+  margin: 0 180px 0 340px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 760, ../../../../gamunex_SASS/sass/screen.scss */
+.unln {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #c9caca;
+  padding: 20px 0px 30px 0px;
+}
+
+/* line 768, ../../../../gamunex_SASS/sass/screen.scss */
+.no-unln {
+  padding: 20px 0px 30px 0px;
+}
+
+/* line 772, ../../../../gamunex_SASS/sass/screen.scss */
+.globalBullet {
+  padding: 0;
+  width: 325px;
+  float: left;
+  margin: 40px 0 0 0px;
+}
+
+/* line 779, ../../../../gamunex_SASS/sass/screen.scss */
+.global-button-inactive {
+  background: url("../images/global_button.png");
+  background-size: 246px 68px;
+  width: 246px;
+  height: 68px;
+  display: table;
+  font-family: 'DINBold';
+  color: #00abaa;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 791, ../../../../gamunex_SASS/sass/screen.scss */
+.global-button-inactive-small {
+  background: url("../images/global_button_short.png");
+  background-size: 221px 68px;
+  width: 221px;
+  height: 68px;
+  display: table;
+  font-family: 'DINBold';
+  color: #00abaa;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 803, ../../../../gamunex_SASS/sass/screen.scss */
+.global-button-label {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 811, ../../../../gamunex_SASS/sass/screen.scss */
+.global-button-active {
+  background: url("../images/global_button_active.png");
+  background-size: 246px 68px;
+  width: 246px;
+  height: 68px;
+  display: table;
+  font-family: 'DINBold';
+  color: #FFFFFF;
+}
+
+/* line 821, ../../../../gamunex_SASS/sass/screen.scss */
+.subhead {
+  font-size: 21px;
+  margin: 0 0 20px 145px;
+}
+
+/* line 828, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-question {
+  width: 206px;
+  height: 530px;
+  margin: 0;
+  padding: 0px 20px 0 31px;
+  float: left;
+  line-height: 1.2em;
+  border-right: 1px solid #b8b9bb;
+}
+
+/* line 837, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-question:last-child {
+  border: none;
+  padding-right: 0px;
+}
+
+/* line 841, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-question:first-child {
+  padding-left: 6px;
+}
+
+/* line 844, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-question p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 848, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-button {
+  background: url("../images/0.1_button.png");
+  background-size: 194px 81px;
+  width: 194px;
+  height: 81px;
+  margin: 2px 0 10px 0;
+  font-family: 'DINBold';
+  color: #FFFFFF;
+  cursor: pointer;
+  display: table;
+}
+
+/* line 859, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-0-1-challenger-button span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 0 8px 0;
+}
+
+/* line 866, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-0-1-challenger-footnote {
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+  font-size: 14px;
+  color: #58595b;
+  font-family: 'DINCondensReg';
+}
+
+/* line 875, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-1-image {
+  margin: 0px 0 0 35px;
+  float: left;
+}
+
+/* line 880, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-1-bullets {
+  margin: 10px 0 0 50px;
+  width: 400px;
+  float: left;
+}
+
+/* line 885, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-1-bullets hr {
+  margin-left: -30px;
+  width: 420px;
+  color: #c9caca;
+}
+
+/* line 891, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-1-bullets hr {
+  border: 0;
+  height: 1px;
+  background: #c5c6c6;
+}
+
+/* line 897, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_0_1_CHALLENGER_QUESTIONS_slideActive .page-content {
+  background: none;
+}
+
+/* line 901, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table {
+  background: url("../images/CIDP_1.2_table.png");
+  background-size: 800px 232px;
+  width: 800px;
+  height: 232px;
+  margin: 0px 0 0 90px;
+  position: relative;
+}
+
+/* line 909, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table table {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 770px;
+}
+
+/* line 916, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table table p {
+  margin-left: 55px;
+}
+
+/* line 920, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table td {
+  padding-top: 5px;
+}
+
+/* line 925, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-subhead {
+  margin: 10px 0 0 95px;
+  font-family: 'DINBold';
+}
+
+/* line 930, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-bullet {
+  margin: 25px 0 25px 118px;
+}
+
+/* line 934, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-checktable {
+  background: url("../images/CIDP_1.2_checktable.png");
+  background-size: 566px 95px;
+  width: 451px;
+  height: 95px;
+  margin: 0px 0 0px 95px;
+  float: left;
+}
+
+/* line 943, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-buttons {
+  margin: -60px 0 0 70px;
+  float: left;
+}
+
+/* line 948, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-screen2 {
+  position: absolute;
+  margin: -18px 0 0 0;
+}
+
+/* line 953, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table-content1 {
+  float: left;
+  margin: 18px 0 0 120px;
+}
+
+/* line 958, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-table-content1 p {
+  padding: 0 0 22px 0;
+}
+
+/* line 962, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-table-content2 {
+  float: left;
+  margin: 18px 0 0 140px;
+}
+
+/* line 967, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-table-content2 p {
+  padding: 0 0 22px 0;
+}
+
+/* line 971, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-table-content3 {
+  float: left;
+  margin: 68px 0 0 80px;
+}
+
+/* line 976, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-table-content3 p {
+  padding: 0 0 22px 0;
+}
+
+/* line 980, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-2-table-content4 {
+  float: left;
+  margin: 0 0 0 70px;
+}
+
+/* line 985, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-checktable-content {
+  margin: 15px 0 0 100px;
+}
+
+/* line 988, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-checktable-content p {
+  margin: 0 0 13px 0;
+}
+
+/* line 992, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-bullet li span {
+  font-size: 16px;
+  color: #4E544C;
+}
+
+/* line 997, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-1-2-bullet li {
+  line-height: 0.4em;
+}
+
+/* line 1001, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-note {
+  float: left;
+  width: 550px;
+  margin: 0 0 0 95px;
+}
+
+/* line 1006, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-3-bullet1 {
+  margin: 25px 0 0 120px;
+  float: left;
+}
+
+/* line 1011, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-3-bullet2 {
+  margin: 25px 0 0 50px;
+  float: left;
+}
+
+/* line 1016, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-3-bullet2 li {
+  margin-bottom: 3px;
+}
+
+/* line 1019, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-3-bullet2 li span {
+  font-size: 16px;
+  color: #4E544C;
+}
+
+/* line 1024, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-1-3-buttons {
+  position: absolute;
+  top: 400px;
+  right: 50px;
+}
+
+/* line 1030, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-subhead {
+  font-size: 21px;
+  margin: 20px 0 0 150px;
+}
+
+/* line 1035, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-graph {
+  background: url("../images/2.1_graph.png");
+  background-size: 642px 339px;
+  width: 642px;
+  height: 339px;
+  margin: 0 0 0 30px;
+  float: left;
+  position: relative;
+}
+
+/* line 1045, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-buttons {
+  position: absolute;
+  top: 417px;
+  right: 175px;
+  width: 246px;
+}
+
+/* line 1053, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-footnote {
+  position: absolute;
+  top: 560px;
+  right: 238px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 1061, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal {
+  position: relative;
+  background: url("../images/2.1_popup2a.png") no-repeat;
+  background-size: 955px 650px;
+  width: 915px;
+  height: 620px;
+  z-index: 10;
+  margin-top: 15px;
+  padding: 30px 0 0 40px;
+}
+
+/* line 1071, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal .closeXbutton {
+  right: -15px;
+}
+
+/* line 1075, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-read-more {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  z-index: 10;
+  margin-top: 200px;
+}
+
+/* line 1085, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-read-more p {
+  width: 780px;
+  padding: 130px 0 0 50px;
+  line-height: 1.2em;
+}
+
+/* line 1091, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-title {
+  font-size: 21px;
+  font-family: 'DINBold';
+  color: #00abaa;
+  margin-bottom: 5px;
+}
+
+/* line 1097, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal ul {
+  list-style-type: square;
+  margin: 0 0 20px 30px;
+  color: #00abaa;
+  font-size: 30px;
+}
+
+/* line 1104, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal li span {
+  font-size: 16px;
+  color: #4E544C;
+}
+
+/* line 1109, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal li {
+  line-height: 0.5em;
+  margin-bottom: 5px;
+}
+
+/* line 1114, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal .modal-title {
+  margin-left: 7px;
+}
+
+/* line 1118, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal {
+  left: 0px;
+}
+
+/* line 1122, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 1127, ../../../../gamunex_SASS/sass/screen.scss */
+.bar-number {
+  position: relative;
+  top: 10px;
+  color: #fff;
+  font-family: 'DINMed';
+  opacity: 0;
+}
+
+/* line 1135, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-graph-green-bar {
+  position: absolute;
+  bottom: -255px;
+  left: 0px;
+  width: 61px;
+  height: 0px;
+  background: #00a9a7;
+  text-align: center;
+}
+
+/* line 1145, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-2-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png") no-repeat;
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  z-index: 10;
+  margin-top: 180px;
+}
+
+/* line 1155, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-2-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 42px;
+  left: 70px;
+  font-family: 'DINReg';
+  color: #666666;
+  width: 780px;
+}
+
+/* line 1166, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-2-modal-text p {
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+
+/* line 1171, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-2-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 1178, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png") no-repeat;
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  z-index: 10;
+  margin-top: 180px;
+}
+
+/* line 1189, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-modal-text, #CIDP-2-5-sd-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 32px;
+  left: 50px;
+  font-family: 'DINReg';
+  color: #666666;
+  width: 810px;
+}
+
+/* line 1199, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal-text, #CIDP-2-4-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  font-family: 'DINReg';
+  color: #666666;
+  width: 810px;
+}
+
+/* line 1209, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal-text p, #CIDP-2-5-sd-modal-text p {
+  margin-bottom: 10px;
+  line-height: 1.3em;
+}
+
+/* line 1215, ../../../../gamunex_SASS/sass/screen.scss */
+.closeXbutton {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 1221, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal-text li span, #CIDP-2-5-sd-modal-text li span {
+  color: #58595b;
+  font-size: 16px;
+}
+
+/* line 1227, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 430px;
+  width: 974px;
+  height: 430px;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+/* line 1237, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 34px;
+  left: 50px;
+  width: 835px;
+}
+
+/* line 1244, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text p {
+  line-height: 1.2em;
+  margin-bottom: 9px;
+}
+
+/* line 1249, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text ul {
+  margin-left: 25px;
+  list-style-type: square;
+  font-size: 30px;
+  color: #05adac;
+  line-height: 0.8;
+  margin-bottom: 15px;
+}
+
+/* line 1257, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text li ul {
+  margin: 5px 0 15px 0;
+}
+
+/* line 1260, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text li {
+  margin-bottom: 5px;
+  line-height: 0.5em;
+}
+
+/* line 1265, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-text span {
+  color: #58595b;
+  font-size: 16px;
+}
+
+/* line 1270, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 1276, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-3-chart-bar-numbers {
+  text-align: center;
+  width: 55px;
+  padding: 10px 0 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'DINBold';
+}
+
+/* line 1287, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-walking-man {
+  margin: 58px 0 0 255px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 1293, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-walking-man sup {
+  vertical-align: 40%;
+}
+
+/* line 1297, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-graph-gray-bar {
+  width: 61px;
+  height: 0px;
+  background: #929396;
+  position: absolute;
+  bottom: -255px;
+  left: 100px;
+  text-align: center;
+}
+
+/* line 1307, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-standingman-static {
+  position: relative;
+  top: 122px;
+  opacity: 0;
+}
+
+/* line 1312, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-walkingman-static-grey {
+  position: relative;
+  top: 12px;
+  opacity: 0;
+}
+
+/* line 1317, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-standingman-static-grey {
+  position: absolute;
+  bottom: 0px;
+  left: 13px;
+  opacity: 0;
+}
+
+/* line 1323, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-1-walkingman-animated {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* line 1330, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-subhead {
+  font-size: 21px;
+  margin: 15px 0 0 150px;
+}
+
+/* line 1335, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-graph {
+  background: url("../images/2.2_graph.png");
+  background-size: 781px 318px;
+  width: 781px;
+  height: 318px;
+  margin: 0px 0 0 8px;
+  position: relative;
+}
+
+/* line 1344, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-graph sup {
+  vertical-align: 40%;
+}
+
+/* line 1348, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-sd-button {
+  position: absolute;
+  top: 443px;
+  right: 99px;
+  width: 246px;
+}
+
+/* line 1355, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-footnote {
+  margin: -6px 0 0 665px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 1360, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal-footnote {
+  margin: 5px 0 0 165px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 1366, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-5-1-modal-footnote {
+  margin: 40px 0 0 265px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 1372, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-pi-modal {
+  background: url("../images/2.2_PI_chart.png");
+  background-size: 678px 295px;
+  width: 678px;
+  height: 295px;
+  position: absolute;
+  top: 200px;
+  left: 160px;
+}
+
+/* line 1382, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-2-modal-sd-button {
+  float: right;
+  margin: 305px 0 0 0;
+}
+
+/* line 1387, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP_2_2_BAR {
+  position: absolute;
+  width: 58px;
+  height: 0px;
+}
+
+/* line 1392, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP_2_2_BAR p {
+  position: relative;
+  top: 0px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+}
+
+/* line 1400, ../../../../gamunex_SASS/sass/screen.scss */
+#hand-animation-1 {
+  position: absolute;
+  bottom: 24px;
+  left: 270px;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* line 1407, ../../../../gamunex_SASS/sass/screen.scss */
+#hand-animation-2 {
+  position: absolute;
+  bottom: 24px;
+  left: 422px;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* line 1414, ../../../../gamunex_SASS/sass/screen.scss */
+#hand-animation-3 {
+  position: absolute;
+  bottom: 24px;
+  left: 497px;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* line 1421, ../../../../gamunex_SASS/sass/screen.scss */
+#chart-arrow {
+  position: absolute;
+  left: 175px;
+  top: 130px;
+  opacity: 0;
+}
+
+/* line 1427, ../../../../gamunex_SASS/sass/screen.scss */
+#improvement-bar {
+  position: absolute;
+  left: 163px;
+  top: 89px;
+  opacity: 0;
+}
+
+/* line 1433, ../../../../gamunex_SASS/sass/screen.scss */
+#gamunex_dominant {
+  bottom: 24px;
+  left: 270px;
+  background: #00a9a7;
+}
+
+/* line 1438, ../../../../gamunex_SASS/sass/screen.scss */
+#placebo_dominant {
+  bottom: 24px;
+  left: 328px;
+  background: #929396;
+}
+
+/* line 1443, ../../../../gamunex_SASS/sass/screen.scss */
+#gamunex_nondominant {
+  bottom: 24px;
+  left: 422px;
+  background: #00a9a7;
+}
+
+/* line 1448, ../../../../gamunex_SASS/sass/screen.scss */
+#placebo_nondominant {
+  bottom: 24px;
+  left: 480px;
+  background: #929396;
+}
+
+/* line 1456, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1461, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-chart {
+  background: url("../images/2.3_graph_c1.png");
+  background-size: 820px 312px;
+  width: 820px;
+  height: 312px;
+  margin: 15px 0 0 15px;
+  float: left;
+  position: relative;
+}
+
+/* line 1471, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-3-calloutBG {
+  background: url("../images/2.3_callout_c1.png");
+  background-size: 243px 111px;
+  width: 243px;
+  height: 111px;
+  position: absolute;
+  opacity: 0;
+  font-size: 16px;
+  display: table;
+}
+
+/* line 1481, ../../../../gamunex_SASS/sass/screen.scss */
+.chart-callouts {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 1485, ../../../../gamunex_SASS/sass/screen.scss */
+.chart-hot-spot {
+  width: 220px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* line 1491, ../../../../gamunex_SASS/sass/screen.scss */
+#course-max {
+  cursor: pointer;
+}
+
+/* line 1494, ../../../../gamunex_SASS/sass/screen.scss */
+#course1 {
+  top: 35px;
+  left: 115px;
+}
+
+/* line 1499, ../../../../gamunex_SASS/sass/screen.scss */
+#course2 {
+  top: 35px;
+  left: 350px;
+}
+
+/* line 1504, ../../../../gamunex_SASS/sass/screen.scss */
+#course3 {
+  top: 35px;
+  left: 580px;
+}
+
+/* line 1508, ../../../../gamunex_SASS/sass/screen.scss */
+.chart-bar {
+  position: absolute;
+  background: #99dddb;
+  width: 55px;
+  height: 0px;
+  z-index: 2;
+}
+
+/* line 1515, ../../../../gamunex_SASS/sass/screen.scss */
+.max-chart-bar {
+  position: absolute;
+  background: #00aaa6;
+  width: 55px;
+  height: 0px;
+  z-index: 3;
+}
+
+/* line 1522, ../../../../gamunex_SASS/sass/screen.scss */
+#max-week-3-bar {
+  bottom: 23px;
+  left: 210px;
+}
+
+/* line 1526, ../../../../gamunex_SASS/sass/screen.scss */
+#max-week-6-bar {
+  bottom: 23px;
+  left: 320px;
+}
+
+/* line 1530, ../../../../gamunex_SASS/sass/screen.scss */
+#max-week-24-bar {
+  bottom: 23px;
+  left: 435px;
+}
+
+/* line 1535, ../../../../gamunex_SASS/sass/screen.scss */
+#week-3-bar {
+  bottom: 23px;
+  left: 210px;
+}
+
+/* line 1539, ../../../../gamunex_SASS/sass/screen.scss */
+#week-6-bar {
+  bottom: 23px;
+  left: 320px;
+}
+
+/* line 1543, ../../../../gamunex_SASS/sass/screen.scss */
+#week-24-bar {
+  bottom: 23px;
+  left: 435px;
+  background: #00AAA6;
+}
+
+/* line 1548, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-3-calloutbox-text {
+  padding: 3px 10px 0px 35px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1554, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-callout1 {
+  margin: 164px 0 0 260px;
+}
+
+/* line 1558, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-callout2 {
+  margin: 223px 0 0 265px;
+}
+
+/* line 1562, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-callout3 {
+  margin: 70px 0 0 370px;
+}
+
+/* line 1566, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-callout4 {
+  margin: 140px 0 0 375px;
+}
+
+/* line 1570, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-callout5 {
+  margin: 70px 0 0 485px;
+}
+
+/* line 1574, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-chart-buttons {
+  float: right;
+  margin: -150px 25px 0 0px;
+}
+
+/* line 1579, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-bullet {
+  float: left;
+  margin: 0 0 0 170px;
+}
+
+/* line 1584, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-singlebullet {
+  float: left;
+  margin: 15px 0 0 167px;
+}
+
+/* line 1589, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-bullet li span {
+  font-size: 16px;
+}
+
+/* line 1593, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-footnote {
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  width: 250px;
+  position: absolute;
+  top: 549px;
+  right: 36px;
+  line-height: 0.75em;
+}
+
+/* line 1602, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-3-footnote p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* line 1622, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1627, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-chart {
+  background: url("../images/2.4_graph_e.png") 0px 69px no-repeat;
+  background-size: 759px 254px;
+  width: 857px;
+  height: 357px;
+  margin: 0px 0 0 0;
+  float: left;
+  position: relative;
+}
+
+/* line 1638, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-chart-callout {
+  width: 200px;
+  float: right;
+  margin: -287px 40px 0 0;
+  color: #00abaa;
+  font-family: 'DINBold';
+  font-size: 17px;
+}
+
+/* line 1647, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-chart-callout p {
+  color: #4E544C;
+  font-family: 'DINReg';
+  font-size: 14px;
+}
+
+/* line 1653, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-sd-button {
+  float: right;
+  margin: -98px 75px 0 0;
+  visible: hidden;
+}
+
+/* line 1659, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-vr-button {
+  float: right;
+  margin: -98px 75px 0 0;
+}
+
+/* line 1664, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-lower-subhead {
+  float: left;
+  margin: 20px 0 0 105px;
+}
+
+/* line 1669, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-callout {
+  background: url("../images/2.4_callout.png");
+  background-size: 435px 111px;
+  width: 435px;
+  height: 111px;
+  position: relative;
+  float: right;
+  z-index: 10;
+}
+
+/* line 1679, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-callout-text {
+  padding: 20px;
+  margin: 8px 0 0 60px;
+  line-height: 1.15em;
+}
+
+/* line 1687, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-callout-modal {
+  background: url("../images/2.4_callout.png");
+  background-size: 435px 111px;
+  width: 435px;
+  height: 111px;
+  position: absolute;
+  top: 235px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* line 1698, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-callout-text-modal {
+  padding: 20px;
+  margin: 8px 0 0 60px;
+  line-height: 1.15em;
+}
+
+/* line 1704, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-4-footnote {
+  font-size: 14px;
+  margin: 337px 0 0 663px;
+  font-family: 'DINCondensReg';
+  line-height: 1.3;
+}
+
+/* line 1720, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  top: 150px;
+  z-index: 10;
+}
+
+/* line 1730, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-sd-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 409px;
+  width: 974px;
+  height: 409px;
+  top: 150px;
+  z-index: 10;
+}
+
+/* line 1739, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-sd-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 388px;
+  width: 974px;
+  height: 388px;
+  top: 150px;
+  z-index: 10;
+}
+
+/* line 1749, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal .sd-on-page {
+  top: 140px;
+  left: 0px;
+  width: 750px;
+}
+
+/* line 1755, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal-text {
+  font-size: 18px;
+  position: absolute;
+  top: 25px;
+  left: 70px;
+}
+/* line 1760, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal-text ul {
+  list-style-type: square;
+  color: #00abaa;
+  font-size: 30px;
+}
+/* line 1768, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal-text li span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* line 1777, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-4-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 1784, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1789, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-chart {
+  background: url("../images/2.5_graph_wbars.png");
+  background-size: 886px 311px;
+  width: 886px;
+  height: 311px;
+  margin: 0px 0 0 -10px;
+  position: relative;
+}
+
+/* line 1798, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_5_QOL_24_WEEKS_slideActive #CIDP-2-5-chart {
+  margin-top: 5px;
+}
+
+/* line 1802, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-sf-button {
+  float: right;
+  margin: -150px 5px 0 0;
+}
+
+/* line 1807, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-sf-button {
+  float: right;
+  margin: -150px 5px 0 0;
+  z-index: 999;
+}
+
+/* line 1813, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-sd-button {
+  float: right;
+  top: 435px;
+  right: 30px;
+  position: absolute;
+}
+
+/* line 1820, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-5-footnote {
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  line-height: 0.75;
+  width: 180px;
+  position: absolute;
+  top: 508px;
+  right: 62px;
+}
+
+/* line 1833, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-5-footnote p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* line 1843, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-modal {
+  background: url("../images/2.1_popup2.png") no-repeat;
+  background-size: 974px 207px;
+  width: 924px;
+  height: 207px;
+  margin-top: 200px;
+  z-index: 10;
+  padding: 50px 0 0 50px;
+  position: relative;
+}
+
+/* line 1854, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-modal-text {
+  font-size: 16px;
+  margin-top: -21px;
+}
+
+/* line 1858, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-modal-text p {
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+
+/* line 1864, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-SD {
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 391px;
+  width: 924px;
+  height: 341px;
+  margin-top: 200px;
+  z-index: 10;
+  padding: 50px 0 0 50px;
+  position: relative;
+}
+
+/* line 1875, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-SD-text {
+  font-size: 16px;
+}
+
+/* line 1878, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-SD-text p {
+  margin-bottom: 15px;
+}
+
+/* line 1883, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1888, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-chart {
+  background: url("../images/2.6_graph_wbars.png");
+  background-size: 883px 308px;
+  width: 883px;
+  height: 308px;
+  margin: 5px 0 0 -10px;
+}
+
+/* line 1896, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-chart-subhead {
+  font-size: 16px;
+  margin: 20px 0 0 145px;
+}
+
+/* line 1902, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-6-footnote {
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  line-height: 1.3;
+  position: absolute;
+  top: 506px;
+  right: 105px;
+  z-index: 1;
+}
+
+/* line 1911, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-6-footnote p {
+  line-height: 0.75em;
+}
+
+/* line 1914, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-6-footnote p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* line 1917, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-sd-button {
+  position: absolute;
+  top: 432px;
+  right: 30px;
+}
+
+/* line 1923, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 391px;
+  width: 904px;
+  height: 341px;
+  z-index: 10;
+  margin-top: 200px;
+  padding: 50px 0 0 70px;
+}
+
+/* line 1934, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-modal-text {
+  font-size: 16px;
+}
+
+/* line 1937, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-6-modal-text p {
+  margin-bottom: 15px;
+}
+
+/* line 1941, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-3-1-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1946, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-3-1-chart {
+  background: url("../images/CIDP_3.1_calendar.png");
+  background-size: 500px 300px;
+  width: 500px;
+  height: 300px;
+  margin: 0px 0 0 70px;
+  float: left;
+}
+
+/* line 1957, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-3-1-footnote {
+  background: url("../images/global_callout_green.png") no-repeat;
+  background-size: 482px 90px;
+  width: 589px;
+  height: 100px;
+  padding: 11px 15px 15px 20px;
+  font-family: 'DINCondensReg';
+  font-size: 18px;
+  position: absolute;
+  top: 500px;
+  left: 168px;
+}
+
+/* line 1969, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_3_1_DOSING_ADMIN_slideActive .chart-copy {
+  width: 400px;
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+/* line 1974, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_3_1_DOSING_ADMIN_slideActive .chart-copy p {
+  margin-bottom: 15px;
+  line-height: 1.2em;
+}
+
+/* line 1978, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 1983, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-buttons {
+  margin: 65px 0 0 0;
+}
+
+/* line 1987, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-callout {
+  background: url("../images/global_callout_green.png") no-repeat;
+  background-size: 552px 70px;
+  width: 530px;
+  height: 70px;
+  font-family: 'DINCondensReg';
+  padding: 15px 0 0 20px;
+  position: absolute;
+  top: 570px;
+  left: 20px;
+}
+
+/* line 1999, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-callout-text {
+  font-size: 18px;
+}
+
+/* line 2003, ../../../../gamunex_SASS/sass/screen.scss */
+.global-callout {
+  background: url("../images/global_callout_green.png") no-repeat;
+  background-size: 580px 70px;
+  width: 580px;
+  height: 70px;
+  font-family: 'DINCondensReg';
+  font-size: 21px;
+  padding: 15px 0 0 20px;
+  position: absolute;
+}
+
+/* line 2013, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_8_1_GAMUNEX_SUMMARY_slideActive .global-callout {
+  background: url("../images/global_callout_green.png") 0px -20px no-repeat;
+  background-size: 518px 65px;
+  height: 60px;
+  top: 355px;
+  left: 31px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: 'DINCondensMed';
+}
+
+/* line 2025, ../../../../gamunex_SASS/sass/screen.scss */
+#AAN_Guidelines .global-callout {
+  position: relative;
+  clear: both;
+  display: block;
+  width: 655px;
+  height: 100px;
+  background-position: bottom left;
+  margin: 20px 0 0px 20px;
+  padding: 18px 0 0 25px;
+  background: url("../images/superlong_callout_green.png") no-repeat;
+  background-size: 685px 105px;
+}
+
+/* line 2040, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-footnote {
+  float: right;
+  width: 250px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  position: absolute;
+  top: 580px;
+  right: 12px;
+}
+
+/* line 2051, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-5-1-modal {
+  position: relative;
+  background: url("../images/5.1_PI_popup.png");
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  z-index: 10;
+}
+
+/* line 2062, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-5-1-modal-text {
+  font-size: 18px;
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  width: 800px;
+}
+
+/* line 2070, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_5_1_CIDP_SUMMARY_slideActive .subhead {
+  margin-bottom: 20px;
+}
+
+/* line 2074, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal1 h1 {
+  margin-left: 215px;
+}
+
+/* line 2078, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal1 .ContentMain {
+  margin-left: 71px;
+}
+
+/* line 2082, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-expanded-button {
+  width: 251px;
+}
+
+/* line 2086, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-expanded-button-top {
+  background: url("../images/4.1_wht_top.png");
+  background-size: 251px 51px;
+  width: 251px;
+  height: 51px;
+}
+
+/* line 2093, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-expanded-buttons-middle {
+  background: url("../images/4.1_wht_1px.png") repeat-y;
+  background-size: 251px 1px;
+  width: 251px;
+  height: 1px;
+}
+
+/* line 2100, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-expanded-button-bottom {
+  background: url("../images/4.1_wht_bottom.png");
+  background-size: 251px 55px;
+  width: 251px;
+  height: 55px;
+}
+
+/* line 2107, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-4-1-expandable-buttons {
+  margin: 0 0 0 -15px;
+}
+
+/* line 2111, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-expanded-button-sugarcontent {
+  float: left;
+}
+
+/* line 2115, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-expanded-button-sodiumcontent {
+  float: left;
+}
+
+/* line 2119, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-expanded-button-osmolality {
+  float: left;
+}
+
+/* line 2123, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-expanded-button-volumeload {
+  float: left;
+}
+
+/* line 2127, ../../../../gamunex_SASS/sass/screen.scss */
+.expandable-button-cover {
+  position: absolute;
+  padding: 18px 0 0 15px;
+}
+
+/* line 2132, ../../../../gamunex_SASS/sass/screen.scss */
+#sugarcontent-footer {
+  width: 234px;
+  height: 100px;
+  background: #e5f6f6;
+  margin: 5px 0 0 10px;
+  float: left;
+}
+
+/* line 2140, ../../../../gamunex_SASS/sass/screen.scss */
+#sodiumcontent-footer {
+  width: 234px;
+  height: 100px;
+  background: #e5f6f6;
+  margin: 5px 0 0 10px;
+  float: left;
+}
+
+/* line 2148, ../../../../gamunex_SASS/sass/screen.scss */
+#osmolality-footer {
+  width: 234px;
+  height: 100px;
+  background: #e5f6f6;
+  margin: 5px 0 0 10px;
+  float: left;
+}
+
+/* line 2156, ../../../../gamunex_SASS/sass/screen.scss */
+#volumeload-footer {
+  width: 234px;
+  height: 100px;
+  background: #e5f6f6;
+  margin: 5px 0 0 10px;
+  float: left;
+}
+
+/* line 2164, ../../../../gamunex_SASS/sass/screen.scss */
+.button-footer-title {
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #008c8b;
+  font-family: 'helveticaneuelt_stdbold';
+}
+
+/* line 2171, ../../../../gamunex_SASS/sass/screen.scss */
+.button-footer-title p {
+  margin: 10px 0 0 5px;
+  color: #00a9a7;
+}
+
+/* line 2176, ../../../../gamunex_SASS/sass/screen.scss */
+.button-footer-content {
+  margin: 5px 0 0 35px;
+  font-size: 16px;
+  font-family: 'DINMed';
+}
+
+/* line 2182, ../../../../gamunex_SASS/sass/screen.scss */
+.button-footer-content li {
+  line-height: 0.4em;
+}
+
+/* line 2186, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-5-1-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 2191, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-bullet-bg {
+  background: url("../images/5.1_box.png") no-repeat;
+  background-size: 250px 189px;
+  width: 205px;
+  height: 149px;
+  margin: 10px 0 0 0;
+  padding: 20px 5px 20px 40px;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 2202, ../../../../gamunex_SASS/sass/screen.scss */
+.blackbox-ul {
+  color: #666666 !important;
+  margin: 0 0 0 20px;
+  font-size: 12px;
+}
+
+/* line 2208, ../../../../gamunex_SASS/sass/screen.scss */
+.blackbox-ul li {
+  line-height: 1.2em;
+  font-size: 12px;
+}
+
+/* line 2213, ../../../../gamunex_SASS/sass/screen.scss */
+#warning-label {
+  font-size: 16px;
+  font-family: 'DINBold';
+  line-height: 1.2em;
+  width: 920px;
+  margin: 10px 0 0 0px;
+}
+
+/* line 2221, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-5-1-content {
+  margin: -10px 0 0 -10px;
+}
+
+/* line 2225, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-bullets {
+  font-size: 16px;
+  margin-left: 2px;
+}
+
+/* line 2230, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-bullets li {
+  line-height: 0.5em;
+}
+
+/* line 2233, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-bullets li span {
+  position: relative;
+  left: -8px;
+}
+
+/* line 2238, ../../../../gamunex_SASS/sass/screen.scss */
+.black-box {
+  width: 900px;
+  height: 180px;
+  float: left;
+  margin: 60px 0 0 15px;
+  padding: 10px 30px 0 5px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 2247, ../../../../gamunex_SASS/sass/screen.scss */
+.black-box li {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+/* line 2257, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-1-container li span {
+  color: #58595b;
+  font-size: 16px;
+}
+
+/* line 2262, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-subhead {
+  margin: 30px 0 0 30px;
+  font-size: 21px;
+}
+
+/* line 2267, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart {
+  background: url("../images/PI_1.2_table.png");
+  background-size: 902px 321px;
+  width: 902px;
+  height: 321px;
+  margin: 5px 0 0 25px;
+  position: relative;
+}
+
+/* line 2276, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_1_2_SIGNS_SYMPTOMS_slideActive .subhead {
+  margin-left: 30px;
+}
+
+/* line 2280, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart table {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+}
+
+/* line 2286, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart td {
+  padding: 5px 0 0 65px;
+}
+
+/* line 2290, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart td:nth-child(2) {
+  padding-left: 67px;
+}
+
+/* line 2294, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart-content {
+  top: 30px;
+  left: 70px;
+  position: absolute;
+}
+
+/* line 2300, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart-content p {
+  padding: 0 0 28px 0;
+}
+
+/* line 2304, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart-items-left {
+  float: left;
+}
+
+/* line 2308, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-chart-items-right {
+  float: left;
+  width: 380px;
+  margin-left: 80px;
+}
+
+/* line 2314, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-2-bullets {
+  margin: 15px 0 0 84px;
+  font-size: 7pt;
+}
+
+/* line 2319, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-IV-sd-button {
+  position: absolute;
+  top: 415px;
+  right: 145px;
+  width: 246px;
+}
+
+/* line 2326, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-bullets {
+  margin: -5px 0 0 45px;
+}
+
+/* line 2330, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal {
+  position: relative;
+  background: url("../images/2.1_popup2.png") no-repeat;
+  background-size: 974px 207px;
+  width: 974px;
+  height: 207px;
+  top: 130px;
+  left: 0px;
+  z-index: 10;
+  font-family: 'DINReg';
+}
+
+/* line 2342, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  line-height: 1.2em;
+}
+
+/* line 2350, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text ul {
+  margin-left: 25px;
+  list-style-type: square;
+  font-size: 30px;
+  color: #05adac;
+}
+
+/* line 2357, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text li {
+  line-height: 0.6em;
+}
+
+/* line 2361, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text p {
+  margin-bottom: 15px;
+}
+
+/* line 2365, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text li span {
+  color: #58595b;
+  font-size: 16px;
+}
+
+/* line 2370, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-2-1-IV-subhead {
+  margin-top: 20px;
+  margin-left: 150px;
+  font-size: 21px;
+}
+
+/* line 2376, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-2-1-IV-graph {
+  background: url("../images/PI_2.1_IV_graph.png");
+  background-size: 678px 295px;
+  width: 678px;
+  height: 295px;
+  margin: 0px 0 0 20px;
+  position: relative;
+}
+
+/* line 2385, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-IV-copy {
+  font-size: 12px;
+}
+
+/* line 2389, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-2-1-IV-gamunex-bar {
+  width: 55px;
+  height: 58px;
+  background-color: #00a9a7;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 235px;
+  bottom: 27px;
+}
+
+/* line 2401, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-2-1-IV-gamimune-bar {
+  width: 55px;
+  height: 152px;
+  background-color: #929497;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 345px;
+  top: 105px;
+}
+
+/* line 2413, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-modal {
+  position: relative;
+  background: url("../images/2.1_popup.png");
+  background-size: 974px 391px;
+  width: 974px;
+  height: 391px;
+  top: 130px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* line 2424, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 75px;
+  left: 60px;
+  line-height: 1.2em;
+  font-family: 'DINReg';
+}
+
+/* line 2433, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-modal-text p {
+  margin-bottom: 20px;
+}
+
+/* line 2437, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -5px;
+}
+
+/* line 2443, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart {
+  background: url("../images/PI_2.2_chart.png");
+  background-size: 678px 295px;
+  width: 678px;
+  height: 295px;
+  margin: 0px 0 0 139px;
+  position: relative;
+}
+
+/* line 2452, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart table {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+/* line 2458, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart td {
+  padding: 3px 0 0 20px;
+}
+
+/* line 2462, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-content {
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  position: absolute;
+}
+
+/* line 2477, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-2-2-chart-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.15em;
+}
+
+/* line 2484, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line1 {
+  margin: 30px 0 0 20px;
+  font-size: 12pt;
+}
+
+/* line 2489, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line1 p {
+  float: left;
+  padding: 0 122px 0 0;
+  font-size: 12pt;
+}
+
+/* line 2495, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line2 {
+  margin: 30px 0 0 20px;
+  font-size: 12pt;
+}
+
+/* line 2500, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line2 p {
+  float: left;
+  padding: 0 80px 0 0;
+}
+
+/* line 2505, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line3 {
+  margin: 30px 0 0 20px;
+  font-size: 12pt;
+}
+
+/* line 2510, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-chart-line3 p {
+  float: left;
+  padding: 0 60px 0 0;
+}
+
+/* line 2515, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-2-sd-button {
+  margin: 10px 0 0 572px;
+}
+
+/* line 2519, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-4-Result-button {
+  margin: 4px 35px 0 0;
+}
+
+/* line 2523, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-2-4-SD-Button1 {
+  margin: 4px 35px 0 0;
+}
+
+/* line 2527, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-bullet {
+  font-size: 18px;
+  line-height: 1.0em;
+  margin: 20px 0 0 145px;
+  width: 600px;
+}
+
+/* line 2534, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-bullet li {
+  line-height: 0.5em;
+}
+
+/* line 2538, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-1-image {
+  margin: 0px 0 0 20px;
+}
+
+/* line 2542, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-image {
+  margin: 0px 0 0 10px;
+}
+
+/* line 2546, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-container li span {
+  color: #58595b;
+}
+
+/* line 2551, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 2556, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-5-1-bulletBG {
+  background: url("../images/5.1_box.png") no-repeat;
+  background-size: 280px 210px;
+  width: 220px;
+  height: 170px;
+  float: left;
+  margin: 0 0px 0 0;
+  padding: 20px 46px 30px 23px;
+  cursor: pointer;
+}
+
+/* line 2571, ../../../../gamunex_SASS/sass/screen.scss */
+.PI-5-1-bulletBG li {
+  line-height: 0.5em;
+}
+
+/* line 2574, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullets {
+  margin: 0px 0 0 60px;
+}
+
+/* line 2578, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullets ul {
+  list-style: none;
+  margin-left: -7px;
+}
+
+/* line 2583, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullets ul li {
+  list-style-type: none;
+  background: transparent url(../images/global_bullet.png) no-repeat 4px 6px;
+  padding-left: 21px;
+}
+
+/* line 2595, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet1 p {
+  margin: 20px 0 0 10px;
+  padding: 0 15px 0 15px;
+  font-size: 11pt;
+}
+
+/* line 2601, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet2 p {
+  margin: 20px 0 0 10px;
+  padding: 0 15px 0 15px;
+  font-size: 11pt;
+}
+
+/* line 2607, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet3 p {
+  margin: 20px 0 0 10px;
+  padding: 0 15px 0 15px;
+  font-size: 11pt;
+}
+
+/* line 2613, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet4 p {
+  /* margin:20px 0 0 30px;*/
+  margin-left: 15px;
+  padding: 10px 20px 0 5px;
+  font-size: 11pt;
+}
+
+/* line 2620, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet5 p {
+  margin: 20px 0 0 10px;
+  padding: 0 25px 0 15px;
+  font-size: 11pt;
+}
+
+/* line 2626, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet4 {
+  margin: 10px 0 0 125px;
+}
+
+/* line 2630, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-bullet5 {
+  margin: 10px 0 0 0;
+}
+
+/* line 2634, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal {
+  background: url("../images/5.1_PI_popup.png");
+  background-size: 955px 650px;
+  width: 955px;
+  height: 650px;
+  position: relative;
+  z-index: 10;
+  margin: -110px 0 0 20px;
+}
+
+/* line 2644, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-close {
+  margin: -20px 0 0 910px;
+}
+
+/* line 2648, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-title {
+  font-size: 25px;
+  margin: 0 0 0 190px;
+  color: #00abaa;
+  font-weight: bold;
+}
+
+/* line 2655, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-subhead {
+  margin: -380px 0 0 190px;
+  font-size: 21px;
+  float: left;
+}
+
+/* line 2661, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-chart {
+  background: url("../images/5.1_PI_graph.png");
+  background-size: 742px 390px;
+  width: 742px;
+  height: 390px;
+  margin: 50px 0 0 50px;
+}
+
+/* line 2669, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-footnote {
+  margin: 0 0 0 50px;
+  font-size: 14px;
+}
+
+/* line 2674, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-chart-gamunex {
+  width: 65px;
+  height: 230px;
+  background-color: #00a9a7;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 345px;
+  top: 288px;
+}
+
+/* line 2688, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-chart-placebo {
+  width: 65px;
+  height: 105px;
+  background-color: #929497;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 471px;
+  top: 414px;
+}
+
+/* line 2704, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-1-1-graphic {
+  float: left;
+  width: 505px;
+  padding: 0px;
+  margin: 0px 20px 0 65px;
+}
+
+/* line 2711, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-1-1-content {
+  padding: 0;
+  width: 325px;
+  float: left;
+  margin: 0px 0 0 0px;
+  font-size: 8pt;
+}
+
+/* line 2719, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-1-1-bullets {
+  list-style-position: outside;
+  list-style-image: url(assets/images/global_bullet.png);
+  margin-top: 15px;
+}
+
+/* line 2725, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-1-1-bullets .hr1 {
+  width: 350px;
+  background: #c9caca;
+  height: 1px;
+  margin: 28px 0 28px -40px;
+}
+
+/* line 2735, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-graph {
+  background: url("../images/ITP_2.1_graph.png");
+  background-size: 678px 295px;
+  width: 678px;
+  height: 295px;
+  margin: -15px 0 0 30px;
+  position: relative;
+}
+
+/* line 2744, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-bullets {
+  position: absolute;
+  top: 320px;
+  left: 20px;
+  width: 1050px;
+}
+
+/* line 2750, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-bullets li {
+  line-height: 0.4em;
+}
+
+/* line 2754, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-singlebullet li {
+  line-height: 0.5em;
+}
+
+/* line 2758, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-gamunex-bar {
+  width: 55px;
+  height: 160px;
+  background-color: #00a9a7;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 239px;
+  top: 105px;
+}
+
+/* line 2770, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-gamimune-bar {
+  width: 55px;
+  height: 145px;
+  background-color: #929497;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  left: 345px;
+  top: 121px;
+}
+
+/* line 2782, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-copy {
+  font-size: 12px;
+}
+
+/* line 2786, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-3-1-image {
+  float: left;
+  margin: 0px 0 0 20px;
+}
+
+/* line 2791, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-3-1-content {
+  margin: 3px 0 0 20px;
+  width: 490px;
+  float: left;
+  position: relative;
+}
+
+/* line 2798, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-3-1-content p {
+  margin-bottom: 11px;
+  line-height: 1.15em;
+}
+
+/* line 2803, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-3-1-footnote {
+  font-size: 10px;
+  position: absolute;
+  top: 470px;
+  left: 70px;
+  float: left;
+}
+
+/* line 2811, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-3-1-footnote span {
+  color: #58595b;
+}
+
+/* line 2815, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-5-1-subhead {
+  margin: 10px 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 2820, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-5-1-content {
+  margin: 25px 0 0 110px;
+}
+
+/* line 2826, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg {
+  background: url("../images/5.1_box.png");
+  background-size: 250px 189px;
+  width: 250px;
+  height: 189px;
+  margin: 0px 10px 0 0;
+  float: left;
+  font-size: 16px;
+}
+
+/* line 2837, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg ul li {
+  list-style-type: none;
+  background: transparent url(../images/global_bullet.png) no-repeat 4px 6px;
+  padding-left: 21px;
+}
+
+/* line 2844, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg p {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+/* line 2849, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg ul {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* line 2855, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg li {
+  line-height: 0.5em;
+}
+
+/* line 2859, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-bullet-bg li span {
+  color: #58595b;
+}
+
+/* line 2863, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets {
+  list-style-type: square !important;
+  margin: 20px 0 20px 123px !important;
+  color: #00abaa !important;
+  font-size: 30px !important;
+}
+
+/* line 2869, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets span {
+  font-size: 16px;
+}
+
+/* line 2872, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets li {
+  margin: 0 0 10px 0 !important;
+  line-height: 0.5em;
+}
+
+/* line 2877, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets li ul li {
+  line-height: 0.5em;
+}
+
+/* line 2880, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets li ul {
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+/* line 2884, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-modal-5-1-bullets li ul li span {
+  margin-left: -3px;
+}
+
+/* line 2887, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-1 img, #ITP-modal-2 img, #ITP-modal-3 img {
+  margin-left: 100px;
+  margin-top: -26px;
+}
+
+/* line 2891, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-1 .closeXbutton, #ITP-modal-2 .closeXbutton, #ITP-modal-3 .closeXbutton {
+  margin-top: 0px;
+}
+
+/* line 2895, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED-6-1-content {
+  margin: 0px 0px 0px 167px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+/* line 2902, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED-6-1-content ul {
+  margin: 9px 0 0 4px;
+}
+
+/* line 2906, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED-6-1-content h2 {
+  margin-top: 0;
+  margin-left: -20px;
+}
+
+/* line 2911, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED-6-1-content li span {
+  color: #58595b;
+  font-size: 16px;
+}
+
+/* line 2916, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart {
+  background: url("../images/6.2_table.png");
+  background-size: 778px 318px;
+  width: 778px;
+  height: 318px;
+  margin: 0px 0 0 140px;
+  position: relative;
+}
+
+/* line 2925, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart table {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 15px;
+}
+
+/* line 2933, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart ul {
+  margin: 0 0 0 30px;
+}
+
+/* line 2937, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart td li {
+  line-height: 0.3em;
+  font-family: 'DINReg';
+  margin: 0 0 5px 0;
+}
+
+/* line 2943, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart td li span {
+  font-size: 15px;
+}
+
+/* line 2947, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart th {
+  color: #fff;
+  text-align: center;
+}
+
+/* line 2953, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-content p {
+  float: left;
+  width: 200px;
+  text-align: center;
+  margin: 20px 0 0 35px;
+  padding: 10px 20px 0 0;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+/* line 2963, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets1 {
+  float: left;
+  width: 200px;
+  margin: 10px 0 0 40px;
+  font-size: 16px;
+}
+
+/* line 2970, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets1 li {
+  line-height: 0.4em;
+}
+
+/* line 2974, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets2 {
+  float: left;
+  width: 200px;
+  margin: 10px 0 0 60px;
+  font-size: 16px;
+}
+
+/* line 2981, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets2 li {
+  line-height: 0.4em;
+}
+
+/* line 2985, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets3 {
+  float: left;
+  width: 200px;
+  margin: 10px 0 0 50px;
+  font-size: 16px;
+}
+
+/* line 2992, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-chart-bullets3 li {
+  line-height: 0.4em;
+}
+
+/* line 2996, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-6-2-footnote {
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  margin: 6px 0 0 178px;
+}
+
+/* line 3002, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-subhead {
+  margin: 0 0 0 150px;
+  padding: 10px 10px 0 0;
+  font-size: 12pt;
+  text-transform: uppercase;
+}
+
+/* line 3009, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED-7-1-H1 {
+  text-transform: uppercase;
+  font-size: 20pt;
+}
+
+/* line 3014, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-image {
+  position: absolute;
+  left: 630px;
+  top: 450px;
+}
+
+/* line 3020, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-1-subhead2 {
+  margin: 0px 0 20px 150px;
+}
+
+/* line 3024, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-bullets-bottom {
+  float: left;
+  margin: 10px 0 0 170px;
+  font-size: 16px;
+}
+
+/* line 3030, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-1-bullets {
+  margin: 0px 0 0 170px;
+  font-size: 16px;
+}
+
+/* line 3035, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive h1 {
+  font-family: 'AvenirLTStd-Medium';
+}
+
+/* line 3039, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive .subhead {
+  font-family: 'AvenirLTStd-Medium';
+  margin-bottom: 20px;
+}
+
+/* line 3044, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive .page-content {
+  font-family: 'AvenirLTStd-Book';
+}
+
+/* line 3048, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive li {
+  line-height: 1em;
+  margin-bottom: 0px;
+}
+
+/* line 3053, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive .page-content {
+  background: none;
+}
+
+/* line 3057, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_1_PHYSICIAN_SERVICE_slideActive ul {
+  list-style-type: disc;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 3063, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-1-bullets li span {
+  font-size: 16px;
+}
+
+/* line 3067, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_2_PATIENT_SUPPORT_slideActive h1 {
+  font-family: 'AvenirLTStd-Medium';
+  text-transform: uppercase;
+}
+
+/* line 3072, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_2_PATIENT_SUPPORT_slideActive .subhead {
+  font-family: 'AvenirLTStd-Medium';
+  margin-bottom: 20px;
+}
+
+/* line 3077, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_2_PATIENT_SUPPORT_slideActive .page-content {
+  font-family: 'AvenirLTStd-Book';
+}
+
+/* line 3083, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_7_2_PATIENT_SUPPORT_slideActive .page-content {
+  background: none;
+}
+
+/* line 3087, ../../../../gamunex_SASS/sass/screen.scss */
+.ul-sub-head {
+  margin: 0px 0 0 150px;
+}
+
+/* line 3090, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-bullets-bottom li span {
+  font-size: 12pt;
+}
+
+/* line 3094, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-bullets-rightside {
+  margin: 0 0 0 60px;
+  width: 200px;
+  font-size: 12pt;
+}
+
+/* line 3100, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-1-factsheet {
+  position: absolute;
+  right: 287px;
+  top: 425px;
+}
+
+/* line 3106, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-subhead {
+  margin: 0px 0 0 150px;
+  padding: 0 0 20px 0;
+}
+
+/* line 3111, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-2-column1 {
+  float: left;
+  width: 260px;
+  height: 350px;
+  padding: 0 5px 0 0;
+  margin: 0 0 0 140px;
+  border-right: solid 1px #40bfbd;
+}
+
+/* line 3120, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-2-column2 {
+  float: left;
+  width: 260px;
+  height: 350px;
+  padding: 0 20px 0 10px;
+  border-right: solid 1px #40bfbd;
+}
+
+/* line 3128, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-2-column3 {
+  float: left;
+  width: 260px;
+  height: 350px;
+  padding: 0 0 0 10px;
+}
+
+/* line 3135, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-7-2-phone, #Shared-7-2-book, #Shared-7-2-graph {
+  padding: 0 10px 0 0;
+}
+
+/* line 3139, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-column-header {
+  color: #00a9a7;
+  margin-bottom: 10px;
+}
+
+/* line 3144, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet p {
+  margin-left: 40px;
+}
+
+/* line 3148, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* line 3153, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li ul li {
+  margin-bottom: 4px;
+}
+
+/* line 3157, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li span {
+  margin-left: -20px;
+}
+
+/* line 3161, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li ul span {
+  margin-left: 7px;
+}
+
+/* line 3166, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li ul li {
+  margin-bottom: 5px;
+}
+
+/* line 3171, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet li ul {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: -5px;
+  list-style-type: circle !important;
+  color: #666;
+}
+
+/* line 3179, ../../../../gamunex_SASS/sass/screen.scss */
+.Shared-7-2-em-bullet ul {
+  margin-left: 65px;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+/* line 3185, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-8-1-chart {
+  background: url("../images/8.1_checklist.png");
+  background-size: 602px 386px;
+  width: 602px;
+  height: 386px;
+  margin: 0px 0 0 140px;
+  position: relative;
+}
+
+/* line 3194, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-8-1-chart ul {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+/* line 3200, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-8-1-chart li {
+  display: block;
+  padding: 0 0 18px 0;
+  font-size: 14pt;
+}
+
+/* line 3206, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-8-1-chart img {
+  padding: 0 55px 0 0;
+}
+
+/* line 3210, ../../../../gamunex_SASS/sass/screen.scss */
+#Shared-8-1-footnote {
+  margin: 0 0 0 155px;
+}
+
+/* line 3215, ../../../../gamunex_SASS/sass/screen.scss */
+.swim-lane-navigation {
+  position: absolute;
+  z-index: 99;
+  width: 1024px;
+  height: 723px;
+  top: 45px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden!important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 3231, ../../../../gamunex_SASS/sass/screen.scss */
+.swim-lane {
+  width: 180px;
+  height: 723px;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.8) 100%);
+  border-left: 1px solid #444;
+  padding: 0 20px 0 20px;
+  margin: 0 -5px 0 0px;
+  display: inline-block;
+  float: left;
+  overflow-y: auto;
+  overflow-x: hidden!important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 3246, ../../../../gamunex_SASS/sass/screen.scss */
+.resource-lane {
+  height: 1550px;
+}
+
+/* line 3250, ../../../../gamunex_SASS/sass/screen.scss */
+.efficacy-lane {
+  height: 1000px;
+}
+
+/* line 3254, ../../../../gamunex_SASS/sass/screen.scss */
+.lane-title {
+  color: white;
+  text-align: center;
+  padding: 15px 0 0px 0;
+  font-size: 18px;
+  font-family: HelveticaNeue-Bold;
+}
+
+/* line 3262, ../../../../gamunex_SASS/sass/screen.scss */
+.swim-lane-navigation li {
+  list-style: none;
+  margin-left: 0px;
+}
+
+/* line 3267, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-1 {
+  position: relative;
+  width: 1950px;
+  height: 723px;
+  z-index: 100;
+  overflow: hidden!important;
+}
+
+/* line 3275, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-2 {
+  position: relative;
+  width: 1950px;
+  height: 723px;
+  z-index: 100;
+  overflow: hidden!important;
+}
+
+/* line 3283, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-3 {
+  position: relative;
+  width: 1950px;
+  height: 723px;
+  z-index: 100;
+  overflow: hidden!important;
+}
+
+/* line 3291, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-1 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #00a9a7 75%);
+}
+
+/* line 3296, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-1 .ancillary-nav-menu-box span {
+  background: url(../images/cidp-watermark.png);
+  background-size: 170px 120px;
+}
+
+/* line 3301, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-2 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #00a9a7 75%);
+}
+
+/* line 3305, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-2 .ancillary-nav-menu-box span {
+  background: url(../images/pi-watermark.png);
+  background-size: 170px 120px;
+}
+
+/* line 3310, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-3 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #00a9a7 75%);
+}
+
+/* line 3314, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-3 .ancillary-nav-menu-box span {
+  background: url(../images/itp-watermark.png);
+  background-size: 170px 120px;
+}
+
+/* line 3319, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-1 .resource-lane span {
+  background: none;
+}
+
+/* line 3323, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-2 .resource-lane span {
+  background: none;
+}
+
+/* line 3327, ../../../../gamunex_SASS/sass/screen.scss */
+#swim-lane-container-3 .resource-lane span {
+  background: none;
+}
+
+/* line 3339, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-navigation {
+  position: absolute;
+  z-index: 100;
+  top: -45px;
+  left: 0px;
+  width: 1024px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* line 3349, ../../../../gamunex_SASS/sass/screen.scss */
+.swim-lane-button {
+  float: right;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* line 3356, ../../../../gamunex_SASS/sass/screen.scss */
+#ancillary-back-button {
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  width: 100px;
+  height: 18px;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 5px 0px 0px 5px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 9px 10px 7px 10px;
+  margin: 5px 0px 0 10px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* line 3373, ../../../../gamunex_SASS/sass/screen.scss */
+#ancillary-forward-button {
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  width: 100px;
+  height: 18px;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 9px 10px 7px 10px;
+  margin: 5px 5px 0 0px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* line 3390, ../../../../gamunex_SASS/sass/screen.scss */
+#ancillary-back-button span {
+  margin-left: 19px;
+}
+
+/* line 3394, ../../../../gamunex_SASS/sass/screen.scss */
+#ancillary-forward-button span {
+  margin-left: -15px;
+}
+
+/* line 3398, ../../../../gamunex_SASS/sass/screen.scss */
+.right-history-arrow {
+  position: absolute;
+  top: 9px;
+  right: 19px;
+}
+
+/* line 3404, ../../../../gamunex_SASS/sass/screen.scss */
+.left-history-arrow {
+  position: absolute;
+  top: 9px;
+  left: 31px;
+}
+
+/* line 3414, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-storyflow-button {
+  font-family: Arial;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #888;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  color: #777;
+  opacity: 0;
+  padding: 7px 10px 7px 10px;
+  margin: 5px 0px 0 0;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* line 3430, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-storyflow-button-L {
+  width: 100px;
+  text-align: center;
+  color: #FFF;
+  opacity: 0;
+  padding: 7px 10px 7px 10px;
+  margin: 5px 0 0 170px;
+  cursor: pointer;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #888;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* line 3445, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-storyflow-button-R {
+  width: 100px;
+  text-align: center;
+  color: #777;
+  opacity: 0;
+  padding: 7px 10px 7px 10px;
+  margin: 5px 5px 0 0px;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #888;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* line 3464, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-nav-controls {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 25px;
+  height: 200px;
+}
+
+/* line 3472, ../../../../gamunex_SASS/sass/screen.scss */
+.valign {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 3479, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-navigation {
+  overflow: hidden;
+  z-index: 100;
+  bottom: -180px;
+  left: 0px;
+  position: absolute;
+  width: 1024px;
+  height: 155px;
+  background: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  padding: 0 0 20px 0;
+}
+
+/* line 3492, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-nav-menu-box {
+  color: #FFF;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 20px;
+  width: 170px;
+  height: 120px;
+  border: 1px solid #666666;
+  display: inline-table;
+  margin: 20px 0 0 20px;
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+  z-index: 5;
+  line-height: 1.1em;
+}
+
+/* line 3508, ../../../../gamunex_SASS/sass/screen.scss */
+.ancillary-nav-menu-box span {
+  text-shadow: 1px 1px 1px #555;
+}
+
+/* line 3513, ../../../../gamunex_SASS/sass/screen.scss */
+ul#footerTier2 .ancillary-nav-menu-box {
+  margin-bottom: 20px;
+}
+
+/* line 3517, ../../../../gamunex_SASS/sass/screen.scss */
+.swim-lane .ancillary-nav-menu-box {
+  margin: 20px 0 0 0;
+}
+
+/* line 3521, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier1 {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 5;
+  width: 998px;
+  float: right;
+}
+
+/* line 3532, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier1 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #008c8a 75%);
+}
+
+/* line 3536, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier2 {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 5;
+  width: 998px;
+  float: right;
+}
+
+/* line 3547, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier2 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #008c8a 75%);
+}
+
+/* line 3551, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier3 {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 5;
+  width: 998px;
+  float: right;
+}
+
+/* line 3562, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier3 .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #cceeed 0%, #008c8a 75%);
+}
+
+/* line 3566, ../../../../gamunex_SASS/sass/screen.scss */
+#footerResources {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 5;
+  width: 998px;
+  float: right;
+}
+
+/* line 3577, ../../../../gamunex_SASS/sass/screen.scss */
+#footerResources .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #333333 50%, #111111 100%);
+  color: #fff;
+}
+
+/* line 3581, ../../../../gamunex_SASS/sass/screen.scss */
+.resource-lane .ancillary-nav-menu-box {
+  background: -webkit-radial-gradient(center, ellipse cover, #333333 50%, #111111 100%) !important;
+  color: #fff;
+}
+
+/* line 3586, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-navigation ul li:last-child {
+  margin-right: 20px;
+}
+
+/* line 3590, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-navigation li {
+  display: inline;
+  color: white;
+}
+
+/* line 3595, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-nav-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
+}
+
+/* line 3603, ../../../../gamunex_SASS/sass/screen.scss */
+.footer-nav-dot.selected {
+  background: #fff;
+}
+
+/* line 3607, ../../../../gamunex_SASS/sass/screen.scss */
+.dot-hot-spot {
+  position: absolute;
+  width: 25px;
+  height: 77px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+/* line 3615, ../../../../gamunex_SASS/sass/screen.scss */
+#tier1FooterMenuHotSpot {
+  top: 0px;
+}
+
+/* line 3619, ../../../../gamunex_SASS/sass/screen.scss */
+#tier2FooterMenuHotSpot {
+  top: 80px;
+}
+
+/* line 3623, ../../../../gamunex_SASS/sass/screen.scss */
+#tier1FooterMenu {
+  top: 65px;
+  left: 10px;
+}
+
+/* line 3628, ../../../../gamunex_SASS/sass/screen.scss */
+#tier2FooterMenu {
+  top: 80px;
+  left: 10px;
+}
+
+/* line 3633, ../../../../gamunex_SASS/sass/screen.scss */
+#tier3FooterMenu {
+  top: 95px;
+  left: 10px;
+}
+
+/* line 3638, ../../../../gamunex_SASS/sass/screen.scss */
+.selected-background1 {
+  background: white url(../images/cidp-watermark.png) no-repeat !important;
+  color: #00abaa;
+  background-size: 170px 120px;
+}
+
+/* line 3644, ../../../../gamunex_SASS/sass/screen.scss */
+.selected-background2 {
+  background: white url(../images/pi-watermark.png) no-repeat !important;
+  color: #00abaa;
+  background-size: 170px 120px;
+}
+
+/* line 3650, ../../../../gamunex_SASS/sass/screen.scss */
+.selected-background3 {
+  background: white url(../images/itp-watermark.png) no-repeat !important;
+  color: #00abaa;
+  background-size: 170px 120px;
+}
+
+/* line 3658, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_3_TWO_COURSES_slideActive .subhead {
+  margin-bottom: 0;
+}
+
+/* line 3662, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_3_TWO_COURSES_slideActive .ContentMain {
+  margin-top: 16px;
+}
+
+/* line 3666, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .subhead {
+  margin-bottom: 20px;
+}
+
+/* line 3670, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .top-bar-result {
+  position: absolute;
+  top: 205px;
+  left: 140px;
+}
+
+/* line 3676, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .top-bar {
+  position: absolute;
+  top: 208px;
+  left: 137px;
+}
+
+/* line 3682, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .slider-button {
+  position: absolute;
+  left: 319px;
+  bottom: 5px;
+  cursor: pointer;
+  z-index: 3;
+  padding: 10px;
+}
+
+/* line 3691, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .result-underline {
+  position: absolute;
+  left: 350px;
+  bottom: 15px;
+  z-index: 1;
+}
+
+/* line 3698, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .y-trail {
+  position: absolute;
+  left: 344px;
+  bottom: 35px;
+  width: 7px;
+  height: 0px;
+  background: #00a9a7;
+}
+
+/* line 3707, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .y-trail-track {
+  position: absolute;
+  left: 339px;
+  bottom: 35px;
+  background: url(../images/2.4_bar.png) no-repeat;
+  background-size: 16px 211px;
+  width: 16px;
+  height: 211px;
+}
+
+/* line 3717, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .y-legend {
+  color: #00a9a7;
+  position: absolute;
+  right: 425px;
+  bottom: 35px;
+}
+
+/* line 3724, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .gamunex-c-bar {
+  position: absolute;
+  left: 315px;
+  bottom: 36px;
+  width: 60px;
+  height: 190px;
+  background: #00a9a7;
+}
+
+/* line 3733, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .placebo-bar {
+  position: absolute;
+  left: 446px;
+  bottom: 36px;
+  width: 60px;
+  height: 130px;
+  background: #929396;
+}
+
+/* line 3742, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .result-callout {
+  position: absolute;
+  right: -80px;
+  top: 70px;
+}
+
+/* line 3748, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .gamunex-c-bar-number {
+  position: absolute;
+  top: 140px;
+  left: 325px;
+  z-index: 5;
+  color: #fff;
+  font-family: 'DINMed';
+}
+
+/* line 3757, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .placebo-bar-number {
+  position: absolute;
+  top: 200px;
+  left: 460px;
+  z-index: 5;
+  color: #fff;
+  font-family: 'DINMed';
+}
+
+/* line 3766, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .chart-legend {
+  position: absolute;
+  top: 200px;
+  left: 535px;
+  z-index: 2;
+}
+
+/* line 3773, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .gam-31 {
+  position: absolute;
+  top: 340px;
+  left: 315px;
+  z-index: 2;
+}
+
+/* line 3780, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .placebo-result {
+  position: absolute;
+  top: 328px;
+  left: 455px;
+  z-index: 2;
+}
+
+/* line 3787, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .gam-result {
+  position: absolute;
+  top: 328px;
+  left: 308px;
+  z-index: 2;
+}
+
+/* line 3794, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_4_MAINTENANCE_THERAPY_slideActive .p0011 {
+  position: absolute;
+  top: 288px;
+  left: 590px;
+  z-index: 2;
+}
+
+/* line 3801, ../../../../gamunex_SASS/sass/screen.scss */
+#Disease-State {
+  width: 560px;
+}
+
+/* line 3805, ../../../../gamunex_SASS/sass/screen.scss */
+#Efficacy {
+  width: 1500px;
+}
+
+/* line 3809, ../../../../gamunex_SASS/sass/screen.scss */
+#Dosing-And-Administration {
+  width: 560px;
+}
+
+/* line 3814, ../../../../gamunex_SASS/sass/screen.scss */
+#Manufacturing-Process {
+  width: 560px;
+}
+
+/* line 3818, ../../../../gamunex_SASS/sass/screen.scss */
+#Connexions-Program {
+  width: 560px;
+}
+
+/* line 3822, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Disease-State {
+  width: 560px;
+}
+
+/* line 3826, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Efficacy {
+  width: 560px;
+}
+
+/* line 3830, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Efficacy-Dosing-and-Administration {
+  width: 560px;
+}
+
+/* line 3834, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Product-Properties {
+  width: 280px;
+}
+
+/* line 3838, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-PI-Summary {
+  width: 280px;
+}
+
+/* line 3842, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Manufacturing-Process {
+  width: 560px;
+}
+
+/* line 3846, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Connexions-Program {
+  width: 560px;
+}
+
+/* line 3850, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-Third-Menu-Gamunex-Summary {
+  width: 280px;
+}
+
+/* line 3854, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Gamunex {
+  width: 280px;
+}
+
+/* line 3858, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Disease-State {
+  width: 280px;
+}
+
+/* line 3862, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Efficacy {
+  width: 280px;
+}
+
+/* line 3866, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Efficacy-Dosing-and-Administration {
+  width: 280px;
+}
+
+/* line 3870, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Product-Properties {
+  width: 280px;
+}
+
+/* line 3874, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-ITP-Summary {
+  width: 280px;
+}
+
+/* line 3878, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Manufacturing-Process {
+  width: 560px;
+}
+
+/* line 3882, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Connexion-Program {
+  width: 560px;
+}
+
+/* line 3887, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Gamunex-Summary {
+  width: 280px;
+}
+
+/* line 3891, ../../../../gamunex_SASS/sass/screen.scss */
+#Efficacy {
+  width: 1680px;
+}
+
+/* line 3895, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Gamunex {
+  width: 560px;
+}
+
+/* line 3899, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-Third-Menu-Efficacy-Dosing-and-Administration {
+  width: 280px;
+}
+
+/* line 3903, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-1-container {
+  width: 800px;
+  height: 295px;
+  margin: 0px 0 0 170px;
+  position: relative;
+}
+
+/* line 3910, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-1-container li {
+  font-size: 30px;
+  line-height: 0.5em;
+  margin: 0 0 25px 0;
+}
+
+/* line 3916, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-1-container li ol {
+  margin-top: 6px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/* line 3922, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-1-1-container ol li {
+  font-size: 16px;
+}
+
+/* line 3926, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-1-container {
+  float: left;
+  width: 495px;
+  height: 295px;
+  position: relative;
+  color: #000000;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: 'DINReg';
+  font-size: 16px;
+}
+
+/* line 3938, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-1-container p {
+  margin: 0 0 9px 0;
+  line-height: 1.2em;
+}
+
+/* line 3945, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-1-bullet {
+  position: absolute;
+  top: 480px;
+  left: 80px;
+}
+
+/* line 3951, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-container {
+  float: left;
+  width: 805px;
+  margin: -40px 0 0 27px;
+  position: relative;
+  margin-top: 0px;
+  font-size: 16px;
+  padding: 22px 0 55px 30px;
+}
+
+/* line 3961, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-container ul {
+  margin-left: 22px;
+  font-size: 26px;
+}
+
+/* line 3966, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-container p {
+  font-size: 16px;
+}
+
+/* line 3970, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-3-2-container li {
+  line-height: 0.6em;
+  margin-bottom: 5px;
+}
+
+/* line 3975, ../../../../gamunex_SASS/sass/screen.scss */
+.bold-underline {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* line 3980, ../../../../gamunex_SASS/sass/screen.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 3984, ../../../../gamunex_SASS/sass/screen.scss */
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 3989, ../../../../gamunex_SASS/sass/screen.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 3994, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-sd-button {
+  float: right;
+  margin: -77px 175px 0 0;
+}
+
+/* line 3999, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal {
+  position: relative;
+  background: url("../images/2.1_popup2.png") no-repeat;
+  background-size: 974px 206px;
+  width: 974px;
+  height: 206px;
+  z-index: 10;
+  margin-top: 150px;
+}
+
+/* line 4009, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal-text {
+  font-size: 16px;
+  position: absolute;
+  top: 59px;
+  left: 75px;
+  font-family: "DINReg";
+  width: 800px;
+}
+
+/* line 4018, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal-text p {
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+
+/* line 4024, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal ul {
+  list-style-type: square;
+  color: #00abaa;
+  margin-left: 23px;
+  font-size: 30px;
+}
+
+/* line 4031, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal li {
+  line-height: 0.45em;
+  margin-bottom: 10px;
+}
+
+/* line 4036, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal li span {
+  font-size: 16px;
+}
+
+/* line 4040, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal li ul {
+  margin-left: 0px;
+}
+
+/* line 4044, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-2-1-modal ul span {
+  color: #58595b;
+}
+
+/* line 4048, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_1_2_SIGNS_SYMPTOMS_slideActive li {
+  line-height: 0.5em;
+  margin-bottom: 15px;
+}
+
+/* line 4053, ../../../../gamunex_SASS/sass/screen.scss */
+#fullISI {
+  position: relative;
+  background: url("../images/references_popup.png") no-repeat;
+  background-size: 955px 650px;
+  width: 955px;
+  height: 650px;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+/* line 4064, ../../../../gamunex_SASS/sass/screen.scss */
+.isi-modal-title {
+  padding: 16px 0 5px 42px;
+  font-family: 'DINBold';
+  font-size: 18px;
+  color: #fff;
+}
+
+/* line 4071, ../../../../gamunex_SASS/sass/screen.scss */
+#fullREF {
+  position: relative;
+  background: url("../images/references_popup.png") no-repeat;
+  background-size: 955px 650px;
+  width: 955px;
+  height: 650px;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+/* line 4081, ../../../../gamunex_SASS/sass/screen.scss */
+.ref-modal-title {
+  padding: 16px 0 5px 40px;
+  font-family: 'DINBold';
+  font-size: 18px;
+  color: #fff;
+}
+
+/* line 4088, ../../../../gamunex_SASS/sass/screen.scss */
+.scrolable-content {
+  width: 880px;
+  height: 480px;
+  padding: 30px;
+  overflow-y: scroll;
+  margin-left: 12px;
+}
+
+/* line 4096, ../../../../gamunex_SASS/sass/screen.scss */
+.scrolable-content ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* line 4101, ../../../../gamunex_SASS/sass/screen.scss */
+.scrolable-content li {
+  margin-bottom: 10px;
+  font-family: 'DINBold';
+}
+
+/* line 4106, ../../../../gamunex_SASS/sass/screen.scss */
+.scrolable-content li span {
+  margin-bottom: 5px;
+  font-family: 'DINReg';
+}
+
+/* line 4111, ../../../../gamunex_SASS/sass/screen.scss */
+.sd-on-page {
+  position: absolute;
+  top: 560px;
+  left: 30px;
+  font-family: 16px;
+}
+
+/* line 4117, ../../../../gamunex_SASS/sass/screen.scss */
+.sd-on-page ul {
+  margin-left: 25px;
+}
+
+/* line 4120, ../../../../gamunex_SASS/sass/screen.scss */
+.sd-on-page p {
+  margin-bottom: 0px;
+  font-family: 'dinBold';
+  color: #05adac;
+}
+
+/* line 4125, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-chart .up-arrow {
+  position: absolute;
+  left: 170px;
+  top: 90px;
+}
+
+/* line 4131, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP-2-5-chart .improve-text {
+  position: absolute;
+  top: 70px;
+  left: 170px;
+}
+
+/* line 4136, ../../../../gamunex_SASS/sass/screen.scss */
+.read-more {
+  color: #05adac;
+  font-family: 'dinBold';
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+/* line 4150, ../../../../gamunex_SASS/sass/screen.scss */
+.down-arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #05adac;
+  position: absolute;
+  top: 1px;
+  left: 95px;
+}
+
+/* line 4160, ../../../../gamunex_SASS/sass/screen.scss */
+.isiMore {
+  left: 590px;
+}
+
+/* line 4163, ../../../../gamunex_SASS/sass/screen.scss */
+.noBold {
+  font-family: 'DINReg';
+}
+
+/* line 4166, ../../../../gamunex_SASS/sass/screen.scss */
+.disclaimer {
+  margin: 20px 0 0 540px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'DINCondensReg';
+}
+
+/* line 4172, ../../../../gamunex_SASS/sass/screen.scss */
+.footerCopy p {
+  padding-top: 0px;
+}
+
+/* line 4177, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_5_1_PI_SUMMARY_slideActive .disclaimer {
+  width: 500px;
+  float: left;
+  margin-left: 116px;
+  margin-top: -2px;
+}
+
+/* line 4183, ../../../../gamunex_SASS/sass/screen.scss */
+.callout-box {
+  padding: 10px;
+  width: 740px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 380px;
+  left: 10px;
+  text-align: center;
+}
+
+/* line 4193, ../../../../gamunex_SASS/sass/screen.scss */
+#cidp-concept-video, #pi-concept-video, #itp-concept-video {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+}
+
+/* line 4201, ../../../../gamunex_SASS/sass/screen.scss */
+.safe-font {
+  font-family: HelveticaNeue;
+}
+
+/* line 4204, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-callout {
+  position: absolute;
+  top: 400px;
+  left: 18px;
+  font-size: 18px;
+  background: url("../images/global_callout_green.png") 0px -20px no-repeat;
+  background-size: 460px 60px;
+  width: 460px;
+  height: 60px;
+  padding-top: 2px;
+  padding-left: 20px;
+}
+
+/* line 4217, ../../../../gamunex_SASS/sass/screen.scss */
+.CIDP-5-1-footnote {
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+  line-height: 1.3;
+  position: absolute;
+  margin: 5px 0 0 145px;
+}
+
+/* line 4225, ../../../../gamunex_SASS/sass/screen.scss */
+.eyebrow {
+  margin: 0 0 0 150px;
+  font-size: 21px;
+}
+
+/* line 4229, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text .disclaimer {
+  margin: 0 0 0 0;
+  color: #555;
+}
+
+/* line 4233, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-2-1-modal-text ul {
+  font-size: 26px;
+}
+
+/* line 4236, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-chart-copy {
+  width: 400px;
+  float: left;
+}
+
+/* line 4240, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-chart-img {
+  margin: 0 20px 0 0;
+}
+
+/* line 4243, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-chart-title h1 {
+  margin: 0;
+}
+
+/* line 4247, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal1 h1 {
+  margin-left: 150px;
+}
+
+/* line 4251, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal1 ul {
+  display: none;
+}
+
+/* line 4255, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2, #PI-5-1-modal2a {
+  padding-left: 115px;
+  width: 850px;
+}
+
+/* line 4259, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2a ul li span {
+  color: #666;
+  font-size: 16px;
+}
+
+/* line 4263, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 .closeXbutton, #PI-5-1-modal2a .closeXbutton {
+  right: 0px;
+}
+
+/* line 4267, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-chart-copy #PI-3-2-container {
+  padding-top: 0;
+}
+
+/* line 4270, ../../../../gamunex_SASS/sass/screen.scss */
+.menu-box-selected {
+  opacity: 8 !important;
+}
+
+/* line 4274, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_0_2_CONCEPT_PAGE_slideActive .page-content {
+  background: none;
+}
+
+/* line 4277, ../../../../gamunex_SASS/sass/screen.scss */
+#SHARED_0_2_CONCEPT_PAGE_slideActive h1 {
+  margin-top: -5px;
+}
+
+/* line 4280, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_6_arrow {
+  margin: 90px 0 0 160px;
+}
+
+/* line 4283, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 ul, #PI-5-1-modal2a ul {
+  list-style-type: square;
+  margin-left: 25px;
+  color: #05adac;
+  font-size: 30px;
+}
+
+/* line 4291, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 h1, #PI-5-1-modal2a h1 {
+  margin: 0 0 20px 150px;
+}
+
+/* line 4294, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 li, #PI-5-1-modal2a li {
+  margin-bottom: 2px;
+  line-height: 0.6em;
+}
+
+/* line 4299, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 li span #PI-5-1-modal2a li span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* line 4304, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal2 .disclaimer, #PI-5-1-modal2a .disclaimer {
+  margin-left: 30px;
+}
+
+/* line 4308, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3Container {
+  overflow-y: scroll;
+  height: 520px;
+}
+
+/* line 4313, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3Container p {
+  margin-bottom: 6px;
+}
+
+/* line 4327, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3 ul {
+  list-style-type: square;
+  margin: 20px 0 20px 30px;
+  color: #05adac;
+  font-size: 30px;
+  float: left;
+}
+
+/* line 4335, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3 li {
+  margin-bottom: 16px;
+  line-height: 0.45em;
+}
+
+/* line 4340, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3 li span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* line 4345, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal3 .modal-chart-title {
+  margin: 0 0 0 25px;
+}
+
+/* line 4349, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-1 h1 {
+  margin-left: 215px;
+}
+
+/* line 4353, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-1 .modal-footnotes {
+  margin: 10px 0 0 100px;
+}
+
+/* line 4357, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-2 h1 {
+  margin-left: 215px;
+}
+
+/* line 4360, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-2 .modal-footnotes {
+  margin: 10px 0 0 100px;
+}
+
+/* line 4364, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-3 h1 {
+  margin-left: 215px;
+}
+
+/* line 4368, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP-modal-3 .modal-footnotes {
+  margin: 10px 0 0 100px;
+}
+
+/* line 4371, ../../../../gamunex_SASS/sass/screen.scss */
+.table-disclaimer {
+  margin: -5px 0 0 39px;
+  font-size: 14px;
+  font-family: 'DINCondensReg';
+}
+
+/* line 4377, ../../../../gamunex_SASS/sass/screen.scss */
+.improve-text {
+  font-family: 'DINBoldItal';
+  color: #05adac;
+  font-size: 14px;
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 4385, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_6_QOL_48_WEEKS_slideActive .improve-text {
+  top: 270px;
+  left: 180px;
+}
+
+/* line 4390, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_2_5_QOL_24_WEEKS_slideActive .improve-text {
+  top: 70px;
+  left: 170px;
+}
+
+/* line 4395, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_0_2_CONCEPT_PAGE_slideActive .page-content {
+  background: none;
+}
+
+/* line 4399, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_0_2_CONCEPT_PAGE_slideActive .page-content {
+  background: none;
+}
+
+/* line 4403, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP_0_2_CONCEPT_PAGE_slideActive .page-content {
+  background: none;
+}
+
+/* line 4407, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier1 span {
+  background: url(../images/cidp-watermark.png) no-repeat;
+  background-size: 170px 120px;
+}
+
+/* line 4411, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier2 span {
+  background: url(../images/pi-watermark.png) no-repeat;
+  background-size: 170px 120px;
+}
+
+/* line 4415, ../../../../gamunex_SASS/sass/screen.scss */
+#footerTier3 span {
+  background: url(../images/itp-watermark.png) no-repeat;
+  background-size: 170px 120px;
+}
+
+/* line 4420, ../../../../gamunex_SASS/sass/screen.scss */
+#fullISI .scrolable-content p {
+  margin-bottom: 15px;
+}
+
+/* line 4424, ../../../../gamunex_SASS/sass/screen.scss */
+.hit-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 4433, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_1_1_PREVALENCE_slideActive .page-content {
+  background: none;
+}
+
+/* line 4436, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_1_1_PREVALENCE_slideActive h1 {
+  margin-left: 145px;
+}
+
+/* line 4439, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_1_3_SIGNS_SYMPTOMS_slideActive .page-content {
+  background: none;
+}
+
+/* line 4442, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_1_1_DISEASE_BACKGROUND_slideActive .page-content {
+  background: none;
+}
+
+/* line 4445, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_2_1_IV_slideActive .disclaimer {
+  margin-left: 108px;
+}
+
+/* line 4449, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_chart-2_1_complete {
+  margin: 0 0 10px 31px;
+}
+
+/* line 4455, ../../../../gamunex_SASS/sass/screen.scss */
+.itp-2-1-disclaimer {
+  position: absolute;
+  top: 466px;
+  left: 612px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'DINCondensReg';
+}
+
+/* line 4464, ../../../../gamunex_SASS/sass/screen.scss */
+.ITP-5-1-modal-bullet-BG {
+  background: #ffffff;
+  background: -moz-linear-gradient(left, white 0%, #cae8e7 2%, #cae8e7 60%, white 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(2%, #cae8e7), color-stop(60%, #cae8e7), color-stop(100%, white));
+  background: -webkit-linear-gradient(left, white 0%, #cae8e7 2%, #cae8e7 60%, white 100%);
+  background: -o-linear-gradient(left, white 0%, #cae8e7 2%, #cae8e7 60%, white 100%);
+  background: -ms-linear-gradient(left, white 0%, #cae8e7 2%, #cae8e7 60%, white 100%);
+  background: linear-gradient(to right, #ffffff 0%, #cae8e7 2%, #cae8e7 60%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+  width: 880px;
+}
+
+/* line 4476, ../../../../gamunex_SASS/sass/screen.scss */
+#PI_1_2_SIGNS_SYMPTOMS_slideActive .page-content {
+  background: none;
+}
+
+/* line 4480, ../../../../gamunex_SASS/sass/screen.scss */
+#PI-5-1-modal-disclaimer {
+  margin: 2px 0 25px 205px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'DINCondensReg';
+}
+
+/* line 4487, ../../../../gamunex_SASS/sass/screen.scss */
+#CIDP_0_1_CHALLENGER_QUESTIONS_slideActive h1 {
+  margin-left: 145px;
+}
+
+/* line 4491, ../../../../gamunex_SASS/sass/screen.scss */
+#TreatableNeuropathy-Toggle {
+  margin: 25px 0 0 0;
+}
+
+/* line 4495, ../../../../gamunex_SASS/sass/screen.scss */
+.modal-footnotes {
+  font-size: 12px;
+}
+
+/* line 4499, ../../../../gamunex_SASS/sass/screen.scss */
+.lW {
+  float: left;
+  clear: left;
+  height: 15px;
+}
+
+/* line 4500, ../../../../gamunex_SASS/sass/screen.scss */
+.rW {
+  float: right;
+  clear: right;
+  height: 15px;
+}
+
+/* line 4502, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal4 h1 {
+  margin: 0 0 20px 160px;
+}
+
+/* line 4506, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal4 .subhead {
+  margin: 0 0 20px 160px;
+}
+
+/* line 4513, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP_2_1_PATIENT_LEVELS_slideActive h1 {
+  /* margin-left: 150px; */
+}
+
+/* line 4517, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP_2_1_PATIENT_LEVELS_slideActive .ContentMain {
+  margin-top: -5px;
+}
+
+/* line 4521, ../../../../gamunex_SASS/sass/screen.scss */
+.aan-modal-callout {
+  font-size: 18px;
+  background: url("../images/global_callout_green.png") no-repeat;
+  background-size: 500px 70px;
+  width: 500px;
+  height: 70px;
+}
+
+/* line 4540, ../../../../gamunex_SASS/sass/screen.scss */
+.aan-modal-callout span {
+  margin: 0 0 0 50px;
+}
+
+/* line 4544, ../../../../gamunex_SASS/sass/screen.scss */
+#AAN_Guidelines h1 {
+  margin: 0 0 17px 24px;
+}
+
+/* line 4547, ../../../../gamunex_SASS/sass/screen.scss */
+#AAN_Guidelines {
+  padding-left: 115px;
+  width: 833px;
+  margin-left: 7px;
+}
+
+/* line 4552, ../../../../gamunex_SASS/sass/screen.scss */
+#AAN_Guidelines .global-callout {
+  text-transform: uppercase;
+}
+
+/* line 4556, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-title-1 {
+  margin: 0 0 7px 25px;
+  float: left;
+  font-family: 'DINBold';
+}
+
+/* line 4562, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-title-2 {
+  margin: 0 0 7px 70px;
+  float: left;
+  font-family: 'DINBold';
+}
+
+/* line 4568, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-1 {
+  list-style-type: square !important;
+  margin: 0 1px 20px 50px !important;
+  color: #00abaa !important;
+  width: 297px;
+  float: left;
+}
+
+/* line 4575, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-1 li {
+  font-size: 30px !important;
+  line-height: 0.5em;
+}
+
+/* line 4579, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-1 span {
+  font-size: 16px !important;
+}
+
+/* line 4582, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-2 {
+  list-style-type: square !important;
+  margin: 0 0 20px 45px !important;
+  color: #00abaa !important;
+  width: 300px;
+  float: left;
+}
+
+/* line 4596, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-2 li {
+  font-size: 30px !important;
+  line-height: 0.5em;
+}
+
+/* line 4600, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-bullet-2 span {
+  font-size: 16px !important;
+}
+
+/* line 4603, ../../../../gamunex_SASS/sass/screen.scss */
+#aan-modal-footnote {
+  float: left;
+  margin: 12px 40px 40px 40px;
+  width: 800px;
+  font-size: 12px;
+  font-family: 'DINReg';
+}
+
+/* line 4610, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal2 h1 {
+  margin-left: 206px;
+}
+
+/* line 4613, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal2 .subhead {
+  margin-left: 162px;
+}
+
+/* line 4616, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal2 .ContentMain {
+  margin-left: 45px;
+}
+
+/* line 4619, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal3 .ContentMain {
+  margin-left: 12px;
+}
+
+/* line 4623, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal3 h1 {
+  margin-left: 156px;
+}
+
+/* line 4626, ../../../../gamunex_SASS/sass/screen.scss */
+#CIPD-5-1-modal3 .subhead {
+  margin-left: 156px;
+}
+
+/* line 4631, ../../../../gamunex_SASS/sass/screen.scss */
+#ITP_1_1_BACKGROUND_slideActive .page-content {
+  background: none;
+}

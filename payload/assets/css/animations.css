@@ -1,0 +1,41 @@
+/* Swipes */
+
+/* Left */
+@-webkit-keyframes swipeLeft{
+    0% {  -webkit-transform: translate3d(0,0,0); }
+    100% {  -webkit-transform: translate3d(-1024px,0,0); }
+}
+.swipeLeft{
+    -webkit-animation:swipeLeft 300ms 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Right */
+@-webkit-keyframes swipeRight{
+    0% {  -webkit-transform: translate3d(0,0,0); }
+    100% {  -webkit-transform: translate3d(1024px,0,0); }
+}
+.swipeRight{
+    -webkit-animation:swipeRight 300ms 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+.slideLeft {
+	-webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: -1024px;
+}
+
+.slideActive {
+	-webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slideRight {
+	-webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: 1024px;
+}

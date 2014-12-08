@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46DFE6B9171DC1BD00725B26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B3B23161DDD07002A9504 /* main.m */; };
+		46DFE6BA171DC1BD00725B26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B3B27161DDD07002A9504 /* AppDelegate.m */; };
+		46DFE6BB171DC1BD00725B26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B3B33161DDD07002A9504 /* ViewController.m */; };
+		46DFE6BC171DC1BD00725B26 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B3B3B161DDF92002A9504 /* RootView.m */; };
+		46DFE6BE171DC1BD00725B26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05B3B17161DDD06002A9504 /* UIKit.framework */; };
+		46DFE6BF171DC1BD00725B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05B3B19161DDD06002A9504 /* Foundation.framework */; };
+		46DFE6C0171DC1BD00725B26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05B3B1B161DDD06002A9504 /* CoreGraphics.framework */; };
+		46DFE6C3171DC1BD00725B26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F05B3B20161DDD07002A9504 /* InfoPlist.strings */; };
+		46DFE6C4171DC1BD00725B26 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F05B3B29161DDD07002A9504 /* Default.png */; };
+		46DFE6C5171DC1BD00725B26 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F05B3B2B161DDD07002A9504 /* Default@2x.png */; };
+		46DFE6C6171DC1BD00725B26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F05B3B2D161DDD07002A9504 /* Default-568h@2x.png */; };
+		46DFE6C7171DC1BD00725B26 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05B3B2F161DDD07002A9504 /* MainStoryboard.storyboard */; };
+		46DFE6CA171DC1BD00725B26 /* payload in Resources */ = {isa = PBXBuildFile; fileRef = F0A37C5C16F7C11C0026B937 /* payload */; };
+		EB98B73117723225001545C7 /* Gamunex-Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB98B72F17723225001545C7 /* Gamunex-Production.plist */; };
+		F0CE624217E102BB006F4F37 /* WebView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CE624017E102BB006F4F37 /* WebView+Debug.m */; };
+		F0FE814B17FA23A8002B5FFB /* Gammunex-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0FE814917FA23A8002B5FFB /* Gammunex-icon.png */; };
+		F0FE814C17FA23A8002B5FFB /* Gammunex-iconx2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0FE814A17FA23A8002B5FFB /* Gammunex-iconx2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46DFE6CE171DC1BD00725B26 /* Gamunex - Testflight copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamunex - Testflight copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB98B72F17723225001545C7 /* Gamunex-Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gamunex-Production.plist"; sourceTree = "<group>"; };
+		F05B3B17161DDD06002A9504 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F05B3B19161DDD06002A9504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F05B3B1B161DDD06002A9504 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F05B3B21161DDD07002A9504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F05B3B23161DDD07002A9504 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F05B3B26161DDD07002A9504 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F05B3B27161DDD07002A9504 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F05B3B29161DDD07002A9504 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F05B3B2B161DDD07002A9504 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F05B3B2D161DDD07002A9504 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F05B3B30161DDD07002A9504 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F05B3B32161DDD07002A9504 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F05B3B33161DDD07002A9504 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F05B3B3A161DDF92002A9504 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		F05B3B3B161DDF92002A9504 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		F0A37C5C16F7C11C0026B937 /* payload */ = {isa = PBXFileReference; lastKnownFileType = folder; path = payload; sourceTree = "<group>"; };
+		F0CE623F17E102BB006F4F37 /* WebView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Debug.h"; sourceTree = "<group>"; };
+		F0CE624017E102BB006F4F37 /* WebView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Debug.m"; sourceTree = "<group>"; };
+		F0FE814017FA1C49002B5FFB /* Gamunex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gamunex-Prefix.pch"; sourceTree = "<group>"; };
+		F0FE814917FA23A8002B5FFB /* Gammunex-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gammunex-icon.png"; sourceTree = "<group>"; };
+		F0FE814A17FA23A8002B5FFB /* Gammunex-iconx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gammunex-iconx2.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DFE6BD171DC1BD00725B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DFE6BE171DC1BD00725B26 /* UIKit.framework in Frameworks */,
+				46DFE6BF171DC1BD00725B26 /* Foundation.framework in Frameworks */,
+				46DFE6C0171DC1BD00725B26 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F05B3B08161DDD06002A9504 = {
+			isa = PBXGroup;
+			children = (
+				F0A37C5C16F7C11C0026B937 /* payload */,
+				F05B3B1D161DDD06002A9504 /* Darkwing iPad Client Lite */,
+				F05B3B16161DDD06002A9504 /* Frameworks */,
+				F05B3B14161DDD06002A9504 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F05B3B14161DDD06002A9504 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DFE6CE171DC1BD00725B26 /* Gamunex - Testflight copy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F05B3B16161DDD06002A9504 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F05B3B17161DDD06002A9504 /* UIKit.framework */,
+				F05B3B19161DDD06002A9504 /* Foundation.framework */,
+				F05B3B1B161DDD06002A9504 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05B3B1D161DDD06002A9504 /* Darkwing iPad Client Lite */ = {
+			isa = PBXGroup;
+			children = (
+				F05B3B26161DDD07002A9504 /* AppDelegate.h */,
+				F05B3B27161DDD07002A9504 /* AppDelegate.m */,
+				F05B3B2F161DDD07002A9504 /* MainStoryboard.storyboard */,
+				F05B3B3A161DDF92002A9504 /* RootView.h */,
+				F05B3B3B161DDF92002A9504 /* RootView.m */,
+				F05B3B32161DDD07002A9504 /* ViewController.h */,
+				F05B3B33161DDD07002A9504 /* ViewController.m */,
+				F0CE623F17E102BB006F4F37 /* WebView+Debug.h */,
+				F0CE624017E102BB006F4F37 /* WebView+Debug.m */,
+				F05B3B1E161DDD06002A9504 /* Supporting Files */,
+			);
+			path = "Darkwing iPad Client Lite";
+			sourceTree = "<group>";
+		};
+		F05B3B1E161DDD06002A9504 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE814917FA23A8002B5FFB /* Gammunex-icon.png */,
+				F0FE814A17FA23A8002B5FFB /* Gammunex-iconx2.png */,
+				EB98B72F17723225001545C7 /* Gamunex-Production.plist */,
+				F0FE814017FA1C49002B5FFB /* Gamunex-Prefix.pch */,
+				F05B3B20161DDD07002A9504 /* InfoPlist.strings */,
+				F05B3B23161DDD07002A9504 /* main.m */,
+				F05B3B29161DDD07002A9504 /* Default.png */,
+				F05B3B2B161DDD07002A9504 /* Default@2x.png */,
+				F05B3B2D161DDD07002A9504 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DFE6B7171DC1BD00725B26 /* Gamunex - Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DFE6CB171DC1BD00725B26 /* Build configuration list for PBXNativeTarget "Gamunex - Production" */;
+			buildPhases = (
+				46DFE6B8171DC1BD00725B26 /* Sources */,
+				46DFE6BD171DC1BD00725B26 /* Frameworks */,
+				46DFE6C2171DC1BD00725B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gamunex - Production";
+			productName = "Darkwing iPad Client Lite";
+			productReference = 46DFE6CE171DC1BD00725B26 /* Gamunex - Testflight copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F05B3B0A161DDD06002A9504 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Zalewski, Lukasz (PPY-MTL)";
+				TargetAttributes = {
+					46DFE6B7171DC1BD00725B26 = {
+						DevelopmentTeam = H8D8472U73;
+					};
+				};
+			};
+			buildConfigurationList = F05B3B0D161DDD06002A9504 /* Build configuration list for PBXProject "Gamunex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F05B3B08161DDD06002A9504;
+			productRefGroup = F05B3B14161DDD06002A9504 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DFE6B7171DC1BD00725B26 /* Gamunex - Production */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DFE6C2171DC1BD00725B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DFE6C3171DC1BD00725B26 /* InfoPlist.strings in Resources */,
+				46DFE6C4171DC1BD00725B26 /* Default.png in Resources */,
+				46DFE6C5171DC1BD00725B26 /* Default@2x.png in Resources */,
+				F0FE814C17FA23A8002B5FFB /* Gammunex-iconx2.png in Resources */,
+				46DFE6C6171DC1BD00725B26 /* Default-568h@2x.png in Resources */,
+				F0FE814B17FA23A8002B5FFB /* Gammunex-icon.png in Resources */,
+				46DFE6C7171DC1BD00725B26 /* MainStoryboard.storyboard in Resources */,
+				46DFE6CA171DC1BD00725B26 /* payload in Resources */,
+				EB98B73117723225001545C7 /* Gamunex-Production.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DFE6B8171DC1BD00725B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DFE6B9171DC1BD00725B26 /* main.m in Sources */,
+				46DFE6BA171DC1BD00725B26 /* AppDelegate.m in Sources */,
+				46DFE6BB171DC1BD00725B26 /* ViewController.m in Sources */,
+				46DFE6BC171DC1BD00725B26 /* RootView.m in Sources */,
+				F0CE624217E102BB006F4F37 /* WebView+Debug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F05B3B20161DDD07002A9504 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F05B3B21161DDD07002A9504 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F05B3B2F161DDD07002A9504 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F05B3B30161DDD07002A9504 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46DFE6CC171DC1BD00725B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Grifols Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Grifols Inc.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Darkwing iPad Client Lite/Gamunex-Prefix.pch";
+				INFOPLIST_FILE = "Darkwing iPad Client Lite/Gamunex-Production.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "Gamunex - Testflight copy";
+				PROVISIONING_PROFILE = "A1CB02BE-44E5-47D5-B8A0-8F5B8C07172C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A1CB02BE-44E5-47D5-B8A0-8F5B8C07172C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46DFE6CD171DC1BD00725B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Grifols Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Grifols Inc.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Darkwing iPad Client Lite/Gamunex-Prefix.pch";
+				INFOPLIST_FILE = "Darkwing iPad Client Lite/Gamunex-Production.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "Gamunex - Testflight copy";
+				PROVISIONING_PROFILE = "A1CB02BE-44E5-47D5-B8A0-8F5B8C07172C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A1CB02BE-44E5-47D5-B8A0-8F5B8C07172C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F05B3B35161DDD07002A9504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lukasz Zalewski (B37E4KR4PB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lukasz Zalewski (B37E4KR4PB)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "A25C4EA8-C07D-4AD8-BA20-3340CAFB1BEA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A25C4EA8-C07D-4AD8-BA20-3340CAFB1BEA";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F05B3B36161DDD07002A9504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lukasz Zalewski (B37E4KR4PB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lukasz Zalewski (B37E4KR4PB)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "A25C4EA8-C07D-4AD8-BA20-3340CAFB1BEA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A25C4EA8-C07D-4AD8-BA20-3340CAFB1BEA";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DFE6CB171DC1BD00725B26 /* Build configuration list for PBXNativeTarget "Gamunex - Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DFE6CC171DC1BD00725B26 /* Debug */,
+				46DFE6CD171DC1BD00725B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F05B3B0D161DDD06002A9504 /* Build configuration list for PBXProject "Gamunex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05B3B35161DDD07002A9504 /* Debug */,
+				F05B3B36161DDD07002A9504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F05B3B0A161DDD06002A9504 /* Project object */;
+}
